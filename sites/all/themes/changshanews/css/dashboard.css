@@ -329,3 +329,20 @@ body{
 .chinese_right{
       font-family: fiber-black;
 }
+
+.thumbnail {
+  display: block;
+  padding: 0px;
+  margin-bottom: 0px;
+  line-height: 1.428571429;
+  background-color: transparent;
+  border: 0px solid transparent;
+/*  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;*/
+}
+.thumbnail > img,
+.thumbnail a > img {
+    margin-left:0px;
+    margin-right:0px;
+}
