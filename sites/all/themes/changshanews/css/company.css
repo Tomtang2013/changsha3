@@ -30,21 +30,21 @@
     text-decoration: none;
 }
 
-.work_about .ul_left .unactive a,a:visited{
+.work_about  .ul_left .unactive a,a:visited{
     background-color: transparent;
     height: 100%;
     color:#ffffff;
     text-decoration: none;
 }
 
-.work_about .ul_left .unactive a:hover,a:active{
+.work_about  .ul_left .unactive a:hover,a:active{
     background-color: transparent;
     text-decoration: none;
     width: 100%;
     height: 100%;
 }
 
-#work_about .ul_left .active a,a:visited{
+#work_about .container .row .ul_left .active a,a:visited{
     background-color: yellow;
     background-color: transparent;
     height: 100%;

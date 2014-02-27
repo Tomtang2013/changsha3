@@ -8,14 +8,16 @@ $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
 <script type="text/javascript">
     jQuery(function(){
         jQuery( ".active" ).find('a').css('color','black');
+        jQuery( ".active" ).find('a').css('text-decoration','none');
         jQuery( ".unactive" ).find('a').css('color','#666666');
+        jQuery( ".unactive" ).find('a').css('text-decoration','none');
     });
 
 </script>
 
 <div id="work_about" class="work_about " >
     <div class="container">
-        <div class="row">
+        <div class="row" style="padding-top:50px;">
             <ul class="ul_left" style="padding-left:65px;">
                 <li class="active"><a href="<?php print $about_company_path; ?>">关于公司</a></li>
                 <li class="unactive"><a href="<?php print $about_team_path; ?>">关于团队</a></li>

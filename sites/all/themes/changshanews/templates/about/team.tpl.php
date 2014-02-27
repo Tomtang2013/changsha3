@@ -42,7 +42,9 @@ uasort($experts, "compareItems");
 <script type="text/javascript">
     jQuery(function(){
         jQuery( ".active" ).find('a').css('color','black');
+        jQuery( ".active" ).find('a').css('text-decoration','none');
         jQuery( ".unactive" ).find('a').css('color','#666666');
+        jQuery( ".unactive" ).find('a').css('text-decoration','none');
     });
 </script>
 
@@ -51,7 +53,7 @@ uasort($experts, "compareItems");
     <div class="container">
         <div class="row" style="padding-top:50px;">
             <ul class="ul_left" style="padding-left:65px;">
-                <li class="unactive"><a href="<?php print $about_company_path; ?>">关于公司</a></li>
+                <li class="unactive"><a href="<?php print $about_company_path; ?>" >关于公司</a></li>
                 <li class="active"><a href="<?php print $about_team_path; ?>">关于团队</a></li>
             </ul>
 
