@@ -36,7 +36,7 @@ foreach ($result as $row) {
                         <?php $i = 0;foreach ($works_list as $work) : $i++ ?>
                             <div class="div_img col-md-4" style="float:left;">
                                 <a href="<?php print $work_detail_path . $work->nid ?>" >
-                                    <img src="<?php print $work->path; ?>" alt="" data-src="holder.js/346x346"
+                                    <img src="<?php print $work->path; ?>" alt="" data-src=""
                                          class="img-responsive"/>
                                 </a>
                             </div>
