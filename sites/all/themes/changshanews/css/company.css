@@ -1,0 +1,245 @@
+.work_about{
+    background: #222 url(../images/footer/blackStripe.png);
+    padding-bottom: 50px;
+}
+
+
+.work_about .ul_left {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-left: 0px;
+    float: left;
+    font-family: fiber-black;
+}
+
+.ul_left li{
+    padding-left: 38px;
+}
+.work_about .ul_left .active,.unactive {
+    background-color: transparent;
+    display: block;
+    font-size: 20px;
+    text-align: right;
+    width: 200px;
+    padding-right: 30px;
+}
+
+.work_about .ul_left .active {
+    background-color: yellow;
+    color:black;
+    text-decoration: none;
+}
+
+.work_about .ul_left .unactive a,a:visited{
+    background-color: transparent;
+    height: 100%;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.work_about .ul_left .unactive a:hover,a:active{
+    background-color: transparent;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+#work_about .ul_left .active a,a:visited{
+    background-color: yellow;
+    background-color: transparent;
+    height: 100%;
+}
+
+
+
+.work_about .div_right {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right:15px;
+    float: right;
+    color:yellow;
+    clear :right;
+    letter-spacing:4px;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+.work_about .div_right span {
+    padding:5px 0px 5px 5px;
+    font-size: 20px;
+    clear:right;
+    float: right;
+}
+
+.work_about .div_right .en_right{
+/*    padding-right:115px;*/
+}
+
+.work_about_company_content{
+    clear:both;
+    padding-top: 50px;
+}
+.work_about_company_content_title{
+    background-color: yellow;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 10px;
+    clear:both;
+    font-family: fiber-black;
+}
+
+.work_about_company_content_title p{
+    margin:0;
+    
+}
+
+.work_about_company_content_text{
+    background-color: #ffffff;
+}
+
+.work_about_company_logo img{
+    float:left;
+    margin:50px 30px 50px 30px;
+}
+
+.log1{
+    width: 140px;
+}
+
+.log2{
+    width: 140px;
+}
+.log3{
+    width: 140px;
+}
+.work_about_company_text_area{
+    float:left;
+    padding: 43Px 10px 43px 40px;
+    font-size: 12px;
+    max-width: 580px;
+    line-height: 28px;
+/*    font-family: fine-black;*/
+/*    font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;*/
+    font-family:"Microsoft YaHei" ! important;
+}
+
+.work_about_team_main{
+    clear:both;
+/*    width: 906px;
+    margin-left:290px;*/
+}
+.team_member_list{
+ padding-bottom: 80px;
+ padding-top: 50px;
+}
+.team_member_list p{
+    color:#cccccc;
+    font-family: fiber-black;
+}
+.team_member_imgs{
+    border-top: 1px solid #cccccc;
+
+}
+
+.team_member_img{
+    float:left;
+    padding-top: 42px;
+/*    padding-right: 42px;*/
+}
+
+.team_member_imglast{
+    float:left;
+    padding-top: 45px;
+    padding-right: 0px;
+}
+.member_name{
+     background-color: yellow;
+     padding-left:10px;
+     color: black;
+     font-family: super-fine-black;
+}
+.member_img{
+/*    width: 195px;*/
+    height: 283px;
+    background-color: #ffffff;
+}
+
+
+
+.img2{
+    background-image: url(../images/about/member/2.jpg);
+}
+
+.img3{
+    background-image: url(../images/about/member/3.jpg);
+}
+
+.img4{
+    background-image: url(../images/about/member/4.jpg);
+}
+
+.img5{
+    background-image: url(../images/about/member/5.jpg);
+}
+
+.img6{
+    background-image: url(../images/about/member/6.jpg);
+}
+
+.img7{
+    background-image: url(../images/about/member/7.jpg);
+}
+
+.img8{
+    background-image: url(../images/about/member/8.jpg);
+}
+
+.img9{
+    background-image: url(../images/about/member/9.jpg);
+}
+
+
+.big_img{
+    float:left;
+     width: 306px;
+    height: 444px;
+}
+
+
+.member_discrib{
+     float:left;
+}
+
+.member_discrib_left{
+    font-size: 36px;
+    float: left;
+    padding:120px 30px 50px 30px;
+    font-family: super-fine-black;
+}
+
+.member_discrib_right{
+    float: left;
+    padding:127px 0px 50px 0px;
+    font-family: fiber-black;
+}
+
+.member_discrib_bottom{
+     clear:both;
+     border-top: 1px solid silver;
+     margin:310px 0px 0px 30px;
+     padding-top: 30px;
+     max-width: 440px;
+     font-family: fiber-black;
+    
+}
+
+.member_discrib_bottom p{
+    margin-bottom: 0px;
+}
+
+.work_about_team_memeber_main{
+    clear:both;
+    width: 826px;
+    margin-left:368px;
+    background-color: #ffffff;
+}

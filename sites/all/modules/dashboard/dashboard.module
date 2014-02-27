@@ -1,0 +1,186 @@
+<?php
+
+// $Id: dashboard.info,v 1.4 2011/07/04 13:25:57 dries Exp $
+
+/**
+ * Implementation of hook_init
+ */
+function dashboard_init() {
+//    drupal_add_css(drupal_get_path('module', 'dashboard') . '/css/dashboard.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+}
+
+function dashboard_js_alter(&$javascript) {
+  // Swap out jQuery to use an updated version of the library.
+  $javascript['misc/jquery.js']['data'] = drupal_get_path('module', 'dashboard') . '/jquery.js';
+}
+
+/**
+ * Implements hook_help().
+ */
+function dashboard_help($path, $arg) {
+    switch ($path) {
+        case 'admin/help#dashboard':
+            $output = '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('主页模块');
+            return $output;
+    }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function dashboard_permission() {
+    return array(
+        'dashboard' => array(
+            'title' => t('主页'),
+        ),
+    );
+}
+
+function dashboard_menu() {
+    $items = array();
+    $items['dashboard'] = array(
+        'title' => t('主页'),
+        'page callback' => 'dashboard_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['work/summary'] = array(
+        'title' => t('工作'),
+        'page callback' => 'work_summary_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['work/detail'] = array(
+        'title' => t('工作'),
+        'page callback' => 'work_detail_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['about/company'] = array(
+        'title' => t('关于公司'),
+        'page callback' => 'about_company_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['about/team'] = array(
+        'title' => t('关于团队'),
+        'page callback' => 'about_team_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['about/memberdetail'] = array(
+        'title' => t('关于团队'),
+        'page callback' => 'about_memberdetail_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['news/summary'] = array(
+        'title' => t('动态'),
+        'page callback' => 'news_summary_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['news/detail'] = array(
+        'title' => t('新闻'),
+        'page callback' => 'news_detail_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+
+    return $items;
+}
+
+
+function dashboard_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
+function work_summary_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
+function work_detail_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
+function about_company_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
+function about_team_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
+function about_memberdetail_call_back() {
+    $pageContent = '';
+    return $pageContent;
+}
+
+function news_summary_call_back(){
+    $pageContent = '';
+    return $pageContent;
+}
+
+function news_detail_call_back(){
+    $pageContent = '';
+    return $pageContent;
+}
+
+function get_nav_nid($nid,$type,$opt){
+    $result = db_query("SELECT nid FROM node WHERE type = :type", array(':type' => $type))->fetchAll();
+    $length = count($result);
+    for($i=0;$i<$length;$i++){
+        $select_nid = $result[$i]->nid;
+        if('next' == $opt){
+            if($nid == $select_nid && $i+1 !=$length){
+                return $result[$i+1]->nid;
+            }
+        } else if('prv' == $opt){
+            if($nid == $select_nid && $i !=0){
+                return $result[$i-1]->nid;
+            }
+        }
+    }
+    return -1;
+}
+
+function get_nav_member($nid,$opt){
+    $result = db_query("SELECT nid,f.field_m_weight_value FROM node n
+                    join field_data_field_m_weight f on n.nid = f.entity_id and f.entity_type = 'node'
+                    , field_data_field_m_type fm
+                    WHERE n.type = 'member'
+                    and n.nid = fm.entity_id and fm.entity_type = 'node'
+                    and field_m_type_value = (SELECT fm.field_m_type_value FROM node n join
+                    field_data_field_m_type fm on n.nid = fm.entity_id and entity_type = 'node'
+                    and nid = $nid)
+                    order by f.field_m_weight_value")->fetchAll();
+    
+    $length = count($result);
+    for($i=0;$i<$length;$i++){
+        $select_nid = $result[$i]->nid;
+        if('next' == $opt){
+            if($nid == $select_nid && $i+1 !=$length){
+                return $result[$i+1]->nid;
+            }
+        } else if('prv' == $opt){
+            if($nid == $select_nid && $i !=0){
+                return $result[$i-1]->nid;
+            }
+        }
+    }
+    return -1;
+}

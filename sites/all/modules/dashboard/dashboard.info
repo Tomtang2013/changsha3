@@ -1,0 +1,10 @@
+name = Dashboard
+description = Dashboard page.
+core = 7.x
+
+package = AT
+
+version = "7.x-1.0"
+core = "7.x"
+project = "dashboard"
+datestamp = "1387182905"

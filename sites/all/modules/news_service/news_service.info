@@ -1,0 +1,10 @@
+name = News Service
+description = News Service page.
+core = 7.x
+
+package = AT
+
+version = "7.x-1.0"
+core = "7.x"
+project = "news_service"
+datestamp = "1387182905"

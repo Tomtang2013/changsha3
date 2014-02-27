@@ -1,0 +1,110 @@
+<?php
+
+// $Id: news_service.info,v 1.4 2011/07/04 13:25:57 dries Exp $
+
+/**
+ * Implementation of hook_init
+ */
+function news_service_init() {
+    drupal_add_library('system', 'ui.tabs');
+//    drupal_add_js( path_to_theme() .'/js/custom.js', array('weight' => 9));
+}
+
+/**
+ * Implements hook_help().
+ */
+function news_service_help($path, $arg) {
+    switch ($path) {
+        case 'admin/help#news_service':
+            $output = '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('服务模块');
+            return $output;
+    }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function news_service_permission() {
+    return array(
+        'news_service' => array(
+            'title' => t('服务'),
+        ),
+    );
+}
+
+function news_service_menu() {
+    $items = array();
+    $items['news_service/platform'] = array(
+        'title' => t('平台服务'),
+        'page callback' => 'news_service_call_back',
+         'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['news_service/design'] = array(
+        'title' => t('设计服务'),
+        'page callback' => 'news_service_call_back',
+         'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+    $items['news_service/cooperation'] = array(
+        'title' => t('设计服务'),
+        'page callback' => 'news_service_call_back',
+         'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+    return $items;
+}
+
+function news_service_call_back() {
+    $pageContent = '1';
+    return $pageContent;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function news_service_block_info() {
+    $blocks = array();
+    $blocks['news_service_main'] = array(
+        'info' => t('News Service Main'),
+        'cache' => DRUPAL_CACHE_PER_ROLE,
+    );
+    $blocks['news_service_header'] = array(
+        'info' => t('News Service Header'),
+        'cache' => DRUPAL_CACHE_PER_ROLE,
+    );
+
+    return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function news_service_block_view($delta='') {
+    $block = array();
+    switch ($delta) {
+        case 'news_service_main' :
+            $block['content'] = theme("news_service_main");
+            break;
+        case 'news_service_header' :
+            $block['content'] = theme("news_service_header");
+            break;
+    }
+    return $block;
+}
+
+function news_service_theme() {
+    return array(
+        'news_service_main' => array(
+            'template' => 'theme_tpl/news_service_main',
+            'variables' => array('content' => NULL),
+        ),
+        'news_service_header' => array(
+            'template' => 'theme_tpl/news_service_header',
+             'variables' => array('image' => NULL),
+        ),
+    );
+}

@@ -1,0 +1,180 @@
+/***********************************/
+.service_design_header{
+    background-color: #ffffff;
+    background-size: cover;
+    height:515px;
+    width:100%;
+    margin: auto;
+}
+
+.service_design_header_bg{
+    background-image: url(../images/service/header_design.jpg);
+}
+
+.service_platform_header_bg{
+    background-image: url(../images/service/header_platform.jpg);
+}
+
+.service_design_header .ul_left {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-left: 0px;
+    float: left;
+    font-family: fiber-black;
+
+}
+.service_design_header .ul_left .active,.unactive {
+    background-color: transparent;
+    display: block;
+    font-size: 20px;
+    text-align: right;
+    width: 200px;
+    padding-right: 30px;
+}
+
+.service_design_header .ul_left .active {
+    background-color: yellow;
+    color:black;
+    text-decoration: none;
+}
+
+.service_design_header .ul_left .unactive a,a:visited{
+    background-color: transparent;
+    height: 100%;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.service_design_header .ul_left .unactive a:hover,a:active{
+    background-color: transparent;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+#service_design_header .ul_left .active a,a:visited{
+    background-color: yellow;
+    background-color: transparent;
+    height: 100%;
+}
+
+
+
+.service_design_header .div_right {
+    background-color: transparent;
+    padding-left: 0px;
+    float: right;
+    color:#aaaaaa;
+    clear :right;
+/*    font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;*/
+    font-family: 'Pontano Sans', sans-serif;
+
+}
+
+.service_design_header .div_right span {
+    background-color: #ffffff;
+    padding:5px;
+    font-size: 20px;
+    clear:right;
+    float: right;
+    letter-spacing:2px;
+}
+/*.header_message{
+    float:right;
+    text-align: right;
+}
+
+.header_message p{
+     background-color: #ffffff;
+     margin:5px 5px 5px 5px;
+     padding:5px 5px 5px 5px;
+     font-size: 20px;
+     width: 100%;
+}*/
+
+#design_main{
+    background-color: #ffffff;
+    padding-top: 30px;
+    background:#eee url(../images/whiteStripe.png) fixed;
+    padding-bottom: 50px;
+}
+
+#design_main .platform_item{
+    float:left;
+    background-image: url(../images/service/service_bg.jpg);
+    background-size: cover;
+    width: 32%;
+    height:330px;
+    margin-top: 24px;
+    font-size: 30px;
+}
+
+#design_main .platform_item .platform_item_content{
+    padding: 10px 10px 110px 18px;
+    font-family: fiber-black;
+}
+
+#design_main .platform_item hr{
+    margin-left:20px;margin-right:20px;
+    height: 0px;
+}
+
+#design_main .platform_item .platform_item_detail{
+    font-size: 16px;
+    margin-left: 20px;
+    border-top:1px solid #888;
+    margin-right: 20px;
+    padding-top: 30px;
+    margin-top:30px;
+}
+
+.platform_item_detail p{
+    margin:0 0 0.2em;
+}
+
+#design_main .left{
+    background-color: yellow;
+    min-height: 20px;
+    float:right;
+/*    width:36%;*/
+}
+
+#design_main .right{
+    background-color: white;
+    min-height: 20px;
+    float:right;
+    margin-right:10px;
+/*    width:60%;*/
+}
+
+#design_main .left .left_content{
+    border-top:  1px solid silver;
+    min-height: 20px;
+    margin: auto;
+    height: 300px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#design_main .right .right_content{
+    border-top:  1px solid silver;
+    min-height: 20px;
+    margin: auto;
+    height: 300px;
+    padding-top: 10px;
+}
+
+.service-item-content{
+    width:100%;
+    margin-top: -120px;
+}
+
+.service-opt-first{
+/*    width:680px;*/
+}
+
+
+
+.service-opt-sec{
+/*    width:306px;*/
+}

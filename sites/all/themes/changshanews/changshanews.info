@@ -1,0 +1,49 @@
+name = changshanews
+description = A subtheme of Bartik, which is a flexible, recolorable theme with many regions.
+core = 7.x
+base theme = bartik
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/colors.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = css/dashboard.css
+stylesheets[all][] = css/service.css
+stylesheets[all][] = css/work.css
+stylesheets[all][] = css/company.css
+;stylesheets[all][] = js/slider/generic.css
+stylesheets[all][] = js/bxslider/jquery.bxslider.css
+stylesheets[all][] = dist/css/bootstrap-theme.min.css
+stylesheets[all][] = dist/css/bootstrap.css
+
+scripts[] = js/jquery.localscroll-1.2.7-min.js
+scripts[] = js/jquery.parallax-1.1.3.js
+scripts[] = js/jquery.scrollTo-1.4.2-min.js
+scripts[] = js/bxslider/jquery.bxslider.js
+scripts[] = dist/js/bootstrap.js
+scripts[] = dist/js/holder.min.js
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
+
+;settings[shortcut_module_link] = 0
