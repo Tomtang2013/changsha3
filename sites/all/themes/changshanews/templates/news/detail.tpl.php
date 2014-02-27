@@ -43,8 +43,6 @@ if ($nid) {
             autoControls: true
         });
         jQuery('.bx-wrapper').css('margin-bottom','20px');
-        //        jQuery( ".active" ).find('a').css('color','black');
-        //        jQuery( ".unactive" ).find('a').css('color','#3c3b39');
     });
 </script>
 
@@ -67,17 +65,25 @@ if ($nid) {
                                 </div>
                             </div>
 
-                            <div id="sliderFrame">
+                            <div id="sliderFrame ">
                                 <ul class="bxslider">
                                     <?php foreach ($paths as $path): ?>
-                                        <li> <img src="<?php print $path; ?>" style="width:100%;" class="img-responsive" alt="" /></li>
+                                        <li class="container" >
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <img src="<?php print $path; ?>"   class="img-responsive" alt="" />
+                                                </div>
+                                            </div>
+                                        </li>
                                     <?php endforeach ?>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="container">
-                                <div class="row" style="width:700px;font-family:super-fine-black;line-height:26px;">
+                            <div class="container" style="padding-left: 0px;">
+                                <div class="row" style="font-family:super-fine-black;line-height:26px;">
+                                    <div class="col-md-8">
                                     <?php print nl2br($news->n_body); ?>
+                                    </div>
                                 </div>
                             </div>
                     </div>
