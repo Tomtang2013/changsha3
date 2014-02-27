@@ -74,9 +74,8 @@ foreach ($result as $row) {
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
                            <div class="carousel-inner">
-                               <?php $i=0; foreach ($paths as $path): ?>
-                                    <div class="item
-                                         <?php if($i == 0) print "active"?>" >
+                               <?php $i=0; foreach ($paths as $path):?>
+                                    <div class="item <?php if($i == 0) print "active"; $i++?>" >
                                          <img alt="" src="<?php print $path; ?>"
                                               class="img-responsive" >
                                     </div>
