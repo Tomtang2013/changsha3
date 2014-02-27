@@ -64,8 +64,33 @@ if ($nid) {
                                     <span >编辑：<?php print $news->n_editor; ?></span>
                                 </div>
                             </div>
-
-                            <div id="sliderFrame ">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <?php $i=0; foreach ($paths as $path):  ?>
+                                        <li data-target="#carousel-example-generic"
+                                            data-slide-to="<?php print $i;?>"
+                                            class="<?php if($i == 0) print "active"; $i++?>"
+                                        ></li>
+                                    <?php endforeach?>
+                                </ol>
+                                <div class="carousel-inner">
+                                      <?php $i=0; foreach ($paths as $path):  ?>
+                                         <div class="item <?php if($i == 0) print "active"; $i++?>">
+                                            <img  alt=""
+                                                 src="<?php print $path; ?>">
+                                         </div>
+                                    <?php endforeach?>
+                                   
+                                   
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+<!--                                <div id="sliderFrame ">
                                 <ul class="bxslider">
                                     <?php foreach ($paths as $path): ?>
                                         <li class="container" >
@@ -77,7 +102,7 @@ if ($nid) {
                                         </li>
                                     <?php endforeach ?>
                                     </ul>
-                                </div>
+                                </div>-->
                             </div>
                             <div class="container" style="padding-left: 0px;">
                                 <div class="row" style="font-family:super-fine-black;line-height:26px;">
