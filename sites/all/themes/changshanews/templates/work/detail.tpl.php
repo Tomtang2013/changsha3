@@ -76,13 +76,13 @@ if($nid){
      <img src="<?php print $work->w_top_image; ?>" alt="" style="width:100%;padding-bottom:5px; " class="img-responsive"/>
     <div class="container" style="margin-top:-55%;">
         <div class="row">
-            <div class="col-md-3    col-md-offset-9  col-sm-offset-9" >
-                    <a href="<?php print $nav_grid; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_grid.png"  alt=""/></a>
+            <div class="col-md-3    col-md-offset-9  col-sm-offset-9 work_navs" >
+                    <a class="work_nav" href="<?php print $nav_grid; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_grid.png"  alt=""/></a>
                 <?php if ($prv != -1): ?>
-                    <a href="<?php print $nav_path . $prv; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_prv.png"  alt=""/></a>
+                    <a class="work_nav" href="<?php print $nav_path . $prv; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_prv.png"  alt=""/></a>
                 <?php endif; ?>
                 <?php if ($next != -1): ?>
-                    <a href="<?php print $nav_path . $next; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_next.png"  alt=""/></a>
+                    <a class="work_nav" href="<?php print $nav_path . $next; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_next.png"  alt=""/></a>
                 <?php endif; ?>
             </div>
         </div>

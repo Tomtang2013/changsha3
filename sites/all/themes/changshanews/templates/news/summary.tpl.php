@@ -56,7 +56,7 @@ foreach ($result as $row) {
         <div class="work_imgs" style="background-color: #EEEEEE;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8" style="padding-left:66px;" >
+                    <div class="col-md-8 news_items" style="padding-left:66px;" >
                         <div style="height:20px;background-color: yellow;"></div>
                             <div style="min-height:352px;background-color: #ffffff;">
                             <ul style="list-style-type:none;padding-left: 0px;margin-top: 0px;">
@@ -69,7 +69,7 @@ foreach ($result as $row) {
                                     </ul>
                             </div>
                     </div>
-                    <div  class="col-md-4" >
+                    <div  class="col-md-4 news_imgs" >
                         <div style="height:20px;background-color: yellow;"></div>
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                           <!-- Wrapper for slides -->
@@ -82,7 +82,7 @@ foreach ($result as $row) {
                                 <?php endforeach ?>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     <div style="clear:both;padding-bottom: 100px;"></div>
                 </div>
             </div>

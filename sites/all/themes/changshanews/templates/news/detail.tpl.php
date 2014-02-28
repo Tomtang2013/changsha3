@@ -66,56 +66,46 @@ if ($nid) {
                             </div>
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
-                                    <?php $i=0; foreach ($paths as $path):  ?>
+                                    <?php $i = 0;
+                                    foreach ($paths as $path): ?>
                                         <li data-target="#carousel-example-generic"
-                                            data-slide-to="<?php print $i;?>"
-                                            class="<?php if($i == 0) print "active"; $i++?>"
+                                            data-slide-to="<?php print $i; ?>"
+                                            class="<?php if ($i == 0)
+                                            print "active"; $i++ ?>"
                                         ></li>
-                                    <?php endforeach?>
+                                        <?php endforeach ?>
                                 </ol>
                                 <div class="carousel-inner">
-                                      <?php $i=0; foreach ($paths as $path):  ?>
-                                         <div class="item <?php if($i == 0) print "active"; $i++?>">
-                                            <img  alt=""
+                                    <?php $i = 0;
+                                        foreach ($paths as $path): ?>
+                                            <div class="item <?php if ($i == 0)
+                                                print "active"; $i++ ?>">
+                                           <img  alt="" class="news_detail_img"
                                                  src="<?php print $path; ?>">
-                                         </div>
-                                    <?php endforeach?>
-                                   
-                                   
-                                </div>
-                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-<!--                                <div id="sliderFrame ">
-                                <ul class="bxslider">
-                                    <?php foreach ($paths as $path): ?>
-                                        <li class="container" >
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <img src="<?php print $path; ?>"   class="img-responsive" alt="" />
-                                                </div>
-                                            </div>
-                                        </li>
+                                       </div>
                                     <?php endforeach ?>
-                                    </ul>
-                                </div>-->
-                            </div>
-                            <div class="container" style="padding-left: 0px;">
-                                <div class="row" style="font-family:super-fine-black;line-height:26px;">
-                                    <div class="col-md-8">
-                                    <?php print nl2br($news->n_body); ?>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
                                     </div>
+
+                                </div>
+                                <div class="container " style="padding-left: 0px;">
+                                    <div class="row news_detail_txt" style="font-family:super-fine-black;line-height:26px;">
+                                        <div class="col-md-8">
+                                    <?php print nl2br($news->n_body); ?>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
 
                 <div style="clear:both;"></div>
             </div>
         </div>
-</div>
+    </div>
 </div>
