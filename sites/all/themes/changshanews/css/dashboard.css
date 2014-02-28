@@ -135,11 +135,7 @@ body{
 
 .dashboard_main .dashboard_img{
    background-color: #ffffff;
-   background-size: cover!important;
-/*   height:400px!important;*/
    width:100%;
-/*   margin: 0 auto;*/
-/*   padding: 0;*/
 }
 
 .dashboard_main .story{
