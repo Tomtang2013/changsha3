@@ -4,6 +4,8 @@ $about_company_path = $base_path . "about/company";
 $work_summary = $base_path . "work/summary";
 $news_service = $base_path . "news_service/platform";
 $news = $base_path .'news/summary';
+$theme_path = $base_path.'/'.drupal_get_path('theme', 'changshanews').'/';
+
 ?>
 
 <script type="text/javascript">
@@ -18,7 +20,16 @@ $news = $base_path .'news/summary';
         });
     });
 </script>
-<!--[if IE 8]>
+
+<!--<link href="<?php print $theme_path;?>css/ie8/dashboard.css" rel="stylesheet">
+<link href="<?php print $theme_path;?>css/ie8/company.css" rel="stylesheet">
+<link href="<?php print $theme_path;?>css/ie8/service.css" rel="stylesheet">
+<link href="<?php print $theme_path;?>css/ie8/work.css" rel="stylesheet">
+
+<script type="text/javascript">
+    alert('aa');
+</script>-->
+<!--[if lt IE 9]>
 <style>
     .header_left{ float:left;}
     .header_right{ float:right;}
