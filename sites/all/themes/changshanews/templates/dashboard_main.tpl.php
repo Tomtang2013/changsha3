@@ -10,10 +10,10 @@
     jQuery(function(){
             jQuery('#cs_nav').localScroll(800);
             jQuery('.small_log').parallax("50%", 1);
-            jQuery('#dashboard_img1').parallax("50%", 0.2);
-            jQuery('#dashboard_img2').parallax("50%", 0.3);
-            jQuery('#dashboard_img3').parallax("50%", 0.2);
-            jQuery('#dashboard_img4').parallax("50%", 0.3);
+            jQuery('#dashboard_img1').parallax("50%", 0.4);
+            jQuery('#dashboard_img2').parallax("50%", 0.4);
+            jQuery('#dashboard_img3').parallax("50%", 0.4);
+            jQuery('#dashboard_img4').parallax("50%", 0.4);
 
             jQuery('.case ').find('a').mouseover( function(){
                   jQuery(this).css("background-color",'rgba(255, 255, 0, 0.75)');
