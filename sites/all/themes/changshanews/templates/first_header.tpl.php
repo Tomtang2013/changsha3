@@ -22,11 +22,71 @@ $theme_path = $base_path.'/'.drupal_get_path('theme', 'changshanews').'/';
 </script>
 
 <!--[if lt IE 9]>
-    <link href="<?php print $theme_path;?>css/ie8/work.css" rel="stylesheet"/>
-
     <style>
         .header_left{ float:left;}
         .header_right{ float:right;}
+        .work_about_company_content{
+            padding-left:49px;
+            width:80%;
+            float:right;
+        }
+
+        .work_about_company_content_title {
+            width:100%;
+        }
+
+        .work_about_company_content_text {
+            width: 100%;
+        }
+
+        .work_about_company_logo{
+            width:30%;
+        }
+
+        .work_about_company_text_area {
+            width:60%;
+        }
+
+        .work_about_team_main{
+            padding-left:49px;
+            width:80%;
+            float:right;
+        }
+
+        .work_imgs{
+            width:100%;
+        }
+
+        .news_items{
+            width:66%;
+            float: left;
+        }
+
+        .news_imgs{
+             width:33%;
+             float: right;
+        }
+
+        .news_detail_img{
+            width:100%;
+        }
+        .news_detail_txt{
+            width:80%;
+            padding-top: 20px;
+        }
+
+        .work_enviro_main_content_left{
+            width:30%;
+        }
+
+        .work_navs{
+            width:200px;
+            float:left;
+            margin-left:80%;
+        }
+        .work_nav{
+
+        }
     </style>
 <![endif]-->
 
