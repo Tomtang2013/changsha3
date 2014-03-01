@@ -135,11 +135,7 @@ body{
 
 .dashboard_main .dashboard_img{
    background-color: #ffffff;
-   background-size: cover!important;
-/*   height:400px!important;*/
    width:100%;
-/*   margin: 0 auto;*/
-/*   padding: 0;*/
 }
 
 .dashboard_main .story{
@@ -149,20 +145,20 @@ body{
 }
 .dashboard_main .dashboard_img1{
    background: url(../images/main_image/dashboard_image1.jpg) 50% 0 no-repeat fixed;
-   height:515px;
+   height:380px;
 }
 
 .dashboard_main .dashboard_img2{
    background: url(../images/main_image/dashboard_image2.jpg) 50% 0 no-repeat fixed;
-   height:515px;
+   height:380px;
 }
 .dashboard_main .dashboard_img3{
    background: url(../images/main_image/dashboard_image3.jpg) 50% 0 no-repeat fixed;
-   height:515px;
+   height:380px;
 }
 .dashboard_main .dashboard_img4{
    background: url(../images/main_image/dashboard_image4.jpg) 50% 0 no-repeat fixed;
-   height:515px;
+   height:380px;
 }
 .dashboard_main .small_log1{
     background: url(../images/main_image/dashboard_logo1.png) 50% 0 no-repeat fixed;
@@ -181,7 +177,7 @@ body{
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
-        height: 515px;
+        height:380px;
 }
 .dashboard_main .small_log3{
         background: url(../images/main_image/dashboard_logo3.png) 50% 0 no-repeat fixed;
@@ -190,7 +186,7 @@ body{
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
-        height: 515px;
+        height:380px;
 }
 
 .dashboard_main .small_log4{
@@ -200,7 +196,7 @@ body{
     margin: 0 auto;
     position: absolute;
     width: 90%;
-    height: 515px;
+    height:380px;
 }
 .dashboard_main .small_log{
     z-index: 200;
