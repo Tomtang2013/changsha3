@@ -49,14 +49,6 @@ foreach ($result as $row) {
                                 </a>
                             </div>
                         <?php endforeach; ?>
-                        <?php $i = 0;foreach ($works_list as $work) : $i++ ?>
-                            <div class="div_img col-md-4" style="float:left;">
-                                <a href="<?php print $work_detail_path . $work->nid ?>" >
-                                    <img src="<?php print $work->path; ?>" alt="" data-src=""
-                                         class="img-responsive"/>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
                     </div>
                     <div style="clear:both"></div>
                 </div>
