@@ -5,7 +5,7 @@
 .work_summary_top{
 /*     background-color: #eeeeee;*/
      background:#eee url(../images/whiteStripe.png) fixed;
-     min-height: 600px;
+     min-height: 200px;
 }
 
 #work_summary_left{
@@ -56,7 +56,7 @@
 }
 
 .div_img img{
-    width: 346px;
+ 
 }
 .div_imglast{
     float: left;
@@ -141,3 +141,19 @@
     width: 999px;
     padding-top: 20px ;
 }
+
+.news_summary_title_txt{
+     min-height:352px;
+     background-color: #ffffff;
+}
+
+.work_img{
+    width:100%;
+}
+
+.div_img{
+    width:33%;
+    padding-left: 1%;
+    padding-right:0px;
+}
+

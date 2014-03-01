@@ -22,8 +22,16 @@ foreach ($result as $row) {
     jQuery(function(){
         //        jQuery( ".active" ).find('a').css('color','black');
     });
+    
 </script>
+<!--[if lt IE 9]>
+   <script type="text/javascript">
+        jQuery(function(){
+                  jQuery( ".div_img" ).find('img').removeClass()('img-responsive');
+        });
+    </script>
 
+<![endif]-->
 
 <div id="work_summary_main" class="work_summary_main">
     <?php require_once 'work_top.tpl.php'; ?>
@@ -32,7 +40,15 @@ foreach ($result as $row) {
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="padding-left:66px;padding-bottom:50px;" >
-                    <div style="margin-top: -330px;width: 100%;" >
+                    <div style="width: 100%;" >
+                        <?php $i = 0;foreach ($works_list as $work) : $i++ ?>
+                            <div class="div_img col-md-4" style="float:left;">
+                                <a href="<?php print $work_detail_path . $work->nid ?>" >
+                                    <img src="<?php print $work->path; ?>" alt="" data-src=""
+                                         class="img-responsive"/>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
                         <?php $i = 0;foreach ($works_list as $work) : $i++ ?>
                             <div class="div_img col-md-4" style="float:left;">
                                 <a href="<?php print $work_detail_path . $work->nid ?>" >

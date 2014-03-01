@@ -90,23 +90,10 @@ if ($nid) {
                                     <span class="glyphicon glyphicon-chevron-right"></span>
                                 </a>
                             </div>
-<!--                                <div id="sliderFrame ">
-                                <ul class="bxslider">
-                                    <?php foreach ($paths as $path): ?>
-                                        <li class="container" >
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <img src="<?php print $path; ?>"   class="img-responsive" alt="" />
-                                                </div>
-                                            </div>
-                                        </li>
-                                    <?php endforeach ?>
-                                    </ul>
-                                </div>-->
                             </div>
                             <div class="container" style="padding-left: 0px;">
                                 <div class="row" style="font-family:super-fine-black;line-height:26px;">
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 news_detail_txt">
                                     <?php print nl2br($news->n_body); ?>
                                     </div>
                                 </div>

@@ -76,15 +76,15 @@ uasort($experts, "compareItems");
                     ?>
 
                     <div class="team_member_img col-md-3 ">
-                             <a class="thumbnail" href="<?php print $about_memberdetail_path.'/'.$expert->nid ?>" >
-                                <img src="<?php print $path; ?>" />
+                             <a  href="<?php print $about_memberdetail_path.'/'.$expert->nid ?>" >
+                                <img  class="thumbnail"   src="<?php print $path; ?>" />
                             </a>
                             <div class="member_name"><?php print $expert->m_name; ?></div>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div style="clear:both;">
+            <div style="clear:both;"/>
             <div class="team_member_list col-md-10 col-md-offset-2">
                     <div><p>团队成员</p></div>
                     <div class="team_member_imgs">
@@ -101,8 +101,8 @@ uasort($experts, "compareItems");
                         }
                     ?>
                     <div class="team_member_img  col-md-3">
-                            <a  class="thumbnail" href="<?php print $about_memberdetail_path.'/'.$consultant->nid ?>" >
-                                <img src="<?php print $path; ?>" style="width:100%;" />
+                            <a href="<?php print $about_memberdetail_path.'/'.$consultant->nid ?>" >
+                                <img   class="thumbnail"  src="<?php print $path; ?>" style="width:100%;" />
                             </a>
                             <div class="member_name "><?php print $consultant->m_name; ?></div>
                     </div>
