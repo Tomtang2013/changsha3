@@ -24,7 +24,7 @@
     margin-top: 0px;
     padding-left: 0px;
     float: left;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 
 }
 .service_design_header .ul_left .active,.unactive {
@@ -70,8 +70,8 @@
     float: right;
     color:#aaaaaa;
     clear :right;
-/*    font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;*/
-    font-family: 'Pontano Sans', sans-serif;
+/*    font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;*/
+/*    font-family: 'Pontano Sans', sans-serif;*/
 
 }
 
@@ -115,7 +115,7 @@
 
 #design_main .platform_item .platform_item_content{
     padding: 10px 10px 110px 18px;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 }
 
 #design_main .platform_item hr{

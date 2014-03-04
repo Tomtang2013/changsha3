@@ -7,6 +7,7 @@
       font-weight: 400;
       src: local('Pontano Sans'), local('PontanoSans-Regular'),
           url("font/psr.TTF") format('woff');
+      font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;
     }
 
     @font-face {
@@ -15,6 +16,7 @@
        font-weight: normal;
        font-stretch: normal;
        src: url("font/FZLTXHK_0.TTF") format("opentype");
+       font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;
    }
 
    @font-face {
@@ -31,6 +33,7 @@
        font-weight: normal;
        font-stretch: normal;
        src: url("font/fzltcxhjt.TTF") format("opentype");
+       font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;
    }
 
    @font-face {
@@ -39,6 +42,7 @@
        font-weight: normal;
        font-stretch: normal;
        src: url("font/fzltqhjt.TTF") format("opentype");
+       font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;
    }*/
 
 
@@ -46,7 +50,7 @@ body{
 /*    display:none;*/
 /*    font-family: fzlt_0;*/
 /*    background:#FFF url(../images/whiteStripe.png) fixed;*/
-/*    font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;*/
+    font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important;
 
 }
 
@@ -67,7 +71,7 @@ body{
 .first_header{
     width: 100%;
     background-color: black;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
  
 }
 
@@ -250,7 +254,7 @@ body{
     position: relative;
     
     display: block;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 }
 
 .dashboard_footer .news_footer_contact{
@@ -327,7 +331,7 @@ body{
 }
 
 .chinese_right{
-      font-family: fiber-black;
+/*      font-family: fiber-black;*/
 }
 
 .thumbnail {

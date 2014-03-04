@@ -9,7 +9,7 @@
     margin-top: 0px;
     padding-left: 0px;
     float: left;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 }
 
 .ul_left li{
@@ -61,7 +61,7 @@
     color:yellow;
     clear :right;
     letter-spacing:4px;
-    font-family: 'Pontano Sans', sans-serif;
+/*    font-family: 'Pontano Sans', sans-serif;*/
 }
 
 .work_about .div_right span {
@@ -85,7 +85,7 @@
     line-height: 40px;
     padding-left: 10px;
     clear:both;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 }
 
 .work_about_company_content_title p{
@@ -120,7 +120,7 @@
     line-height: 28px;
 /*    font-family: fine-black;*/
 /*    font: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA;*/
-    font-family:"Microsoft YaHei" ! important;
+/*    font-family:"Microsoft YaHei" ! important;*/
 }
 
 .work_about_team_main{
@@ -134,7 +134,7 @@
 }
 .team_member_list p{
     color:#cccccc;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 }
 .team_member_imgs{
     border-top: 1px solid #cccccc;
@@ -156,7 +156,7 @@
      background-color: yellow;
      padding-left:10px;
      color: black;
-     font-family: super-fine-black;
+/*     font-family: super-fine-black;*/
 }
 .member_img{
 /*    width: 195px;*/
@@ -214,13 +214,13 @@
     font-size: 36px;
     float: left;
     padding:120px 30px 50px 30px;
-    font-family: super-fine-black;
+/*    font-family: super-fine-black;*/
 }
 
 .member_discrib_right{
     float: left;
     padding:127px 0px 50px 0px;
-    font-family: fiber-black;
+/*    font-family: fiber-black;*/
 }
 
 .member_discrib_bottom{
@@ -229,7 +229,7 @@
      margin:310px 0px 0px 30px;
      padding-top: 30px;
      max-width: 440px;
-     font-family: fiber-black;
+/*     font-family: fiber-black;*/
     
 }
 
