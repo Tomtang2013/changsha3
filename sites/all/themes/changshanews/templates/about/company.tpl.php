@@ -31,7 +31,7 @@ $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
     
 
     <div class="work_about_company_content " >
-            <div class="col-md-10 col-md-offset-2 ">
+            <div class="col-md-9 col-md-offset-3 ">
                 <div class="row">
                     <div class="work_about_company_content_title col-md-12"><p>潇湘晨报全系全媒体</p></div>
                     <div class="work_about_company_content_text  col-md-12">

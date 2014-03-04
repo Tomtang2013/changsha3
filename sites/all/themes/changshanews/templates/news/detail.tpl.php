@@ -15,24 +15,34 @@ if ($nid) {
     $news->n_origin = $node->field_n_origin['und'][0]['value'];
     $news->n_editor = $node->field_n_editor['und'][0]['value'];
     $news->n_public_date = $node->field_public_date['und'][0]['value'];
-    $news->n_b_image = array();
-    $news->n_b_image[] = $node->field_n_b_image1['und'][0]['uri'];
-    $news->n_b_image[] = $node->field_n_b_image2['und'][0]['uri'];
-    $news->n_b_image[] = $node->field_n_b_image3['und'][0]['uri'];
-    $news->n_b_image[] = $node->field_n_b_image4['und'][0]['uri'];
-    $news->n_b_image[] = $node->field_n_b_image5['und'][0]['uri'];
-    $news->n_b_image[] = $node->field_n_b_image6['und'][0]['uri'];
+    $paths = array();
+    get_fild_n_b_img_path($paths,$node->field_n_b_image1['und'][0]['uri']);
+    get_fild_n_b_img_path($paths,$node->field_n_b_image2['und'][0]['uri']);
+    get_fild_n_b_img_path($paths,$node->field_n_b_image3['und'][0]['uri']);
+    get_fild_n_b_img_path($paths,$node->field_n_b_image4['und'][0]['uri']);
+    get_fild_n_b_img_path($paths,$node->field_n_b_image5['und'][0]['uri']);
+    get_fild_n_b_img_path($paths,$node->field_n_b_image6['und'][0]['uri']);
     $news->n_body = $node->body['und'][0]['value'];
     $news->title = $node->title;
 
-    $paths = array();
-    foreach ($news->n_b_image as $uri) {
-        $url = file_create_url($uri);
+//    foreach ($news->n_b_image as $uri) {
+//        $url = file_create_url($uri);
+//        $url = parse_url($url);
+//        $paths[] = $url['path'];
+//    }
+}
+
+function get_fild_n_b_img_path(&$array,$path){
+    if($path && !empty($path)){
+        $url = file_create_url($path);
         $url = parse_url($url);
-        $paths[] = $url['path'];
+        $array[] = $url['path'];
     }
+    return $array;
+    
 }
 ?>
+
 
 <script type="text/javascript">
 
@@ -73,17 +83,17 @@ if ($nid) {
                                             class="<?php if ($i == 0)
                                             print "active"; $i++ ?>"
                                         ></li>
-                                        <?php endforeach ?>
+                                        <?php  endforeach ?>
                                 </ol>
                                 <div class="carousel-inner">
                                     <?php $i = 0;
                                         foreach ($paths as $path): ?>
                                             <div class="item <?php if ($i == 0)
                                                 print "active"; $i++ ?>">
-                                           <img  alt="" class="news_detail_img"
+                                           <img  alt="" class="news_detail_img" style="width:100%"
                                                  src="<?php print $path; ?>">
                                          </div>
-                                    <?php endforeach?>                             
+                                    <?php  endforeach?>
                                 </div>
                                 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -93,17 +103,12 @@ if ($nid) {
                                 </a>
                             </div>
                             </div>
-                            <div class="container" style="padding-left: 0px;">
+                            <div class="container" style="padding-left: 0px;padding-top:10px;width:100%;">
                                 <div class="row" style="font-family:super-fine-black;line-height:26px;">
                                     <div class="col-md-8 news_detail_txt">
                                     <?php print nl2br($news->n_body); ?>
                                     </div>
 
-                                </div>
-                                <div class="container " style="padding-left: 0px;">
-                                    <div class="row news_detail_txt" style="font-family:super-fine-black;line-height:26px;">
-                                        <div class="col-md-8">
-                                    <?php print nl2br($news->n_body); ?>
                                 </div>
                             </div>
                         </div>
@@ -114,4 +119,3 @@ if ($nid) {
             </div>
         </div>
     </div>
-</div>
