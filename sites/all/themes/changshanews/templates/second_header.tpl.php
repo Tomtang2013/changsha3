@@ -6,7 +6,7 @@
     });
 </script>
 
-<div class="sec_header">
+<div class="sec_header" >
     <div class="container">
         <a href="" style="z-index: 999;padding-left: 40px;">
             <img class="dashboard_main_logo "

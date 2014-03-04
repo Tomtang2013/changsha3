@@ -26,7 +26,7 @@ $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
     <link href="<?php print $theme_path;?>/css/ie8/work.css" rel="stylesheet" type="text/css"/>
 <![endif]-->
 
-<div class="first_header ">
+<div class="first_header navbar-fixed-top" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 header_left" >
@@ -47,3 +47,4 @@ $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
             </div>
         </div>
 </div>
+<div style="margin-bottom:60px;"></div>

@@ -95,8 +95,9 @@ if($nid){
             <div class="col-md-4 ">
                 <div class="work_enviro_main_content">
                     <div class="work_enviro_main_content_left">
-                        <div class="work_enviro_main_content_title"><?php print $work->title; ?></div>
-                        <div style="font-size:18px;"> <?php print $work->w_s_desc; ?></div>
+                        <div class="work_enviro_main_content_title" style="font-family:super-fine-black;">
+                                <?php print $work->title; ?></div>
+                        <div style="font-size:18px;line-height: 33px;"> <?php print $work->w_s_desc; ?></div>
                     </div>
                 </div>
             </div>
