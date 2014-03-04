@@ -11,6 +11,10 @@
     background-image: url(../images/service/header_design.jpg);
 }
 
+.service_cooperation_header_bg{
+    background-image: url(../images/service/header_cooperation.jpg);
+}
+
 .service_platform_header_bg{
     background-image: url(../images/service/header_platform.jpg);
 }

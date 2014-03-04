@@ -12,7 +12,7 @@ $coo_path = $base_path . 'news_service/cooperation';
     });
 </script>
 
-<div class="service_design_header service_platform_header_bg" id="platform_header">
+<div class="service_design_header service_cooperation_header_bg" id="platform_header">
     <div class="container">
         <div class="row" style="padding-top:50px;">
             <div class="col-md-3">
@@ -41,6 +41,7 @@ $coo_path = $base_path . 'news_service/cooperation';
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
+                    潇湘晨报、晨报周刊、红网、快乐笨人报、腾讯大湘网、长啦网、长株潭报等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
@@ -53,6 +54,13 @@ $coo_path = $base_path . 'news_service/cooperation';
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
+                    <div><p> 国家新闻出版总署、湖南省委宣传部</p></div>
+                    <div><p> 房产：恒嘉地产（泊富商业广场）、湘江锦绣、湘域相遇等</p>
+                    <p> 快消产品：酒鬼酒、金健米业、邵阳大曲、黄山头、泸州老窖、烟京啤酒等</p>
+                    <p> 汽车及经销商：广汽本田、比亚迪、仁孚汽车、永通汽车等</p>
+                    <p> 银行：长沙银行、中国农业银行、中信银行、华融湘江银行、北京银行等</p>
+                    <p> 其它：中南出版传媒集团、中联重科股份有限公司、加加集团股份有限公司、湖南顺鑫干混砂浆有限公司、海上1930茶餐厅等</p>
+                    </div>
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
@@ -65,6 +73,7 @@ $coo_path = $base_path . 'news_service/cooperation';
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
+                    湖南省森林植物园、宁乡旅游局等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
@@ -77,6 +86,7 @@ $coo_path = $base_path . 'news_service/cooperation';
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
+                    长沙国际车展、橘洲国际音乐节、新年音乐会、旅游博览会等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
