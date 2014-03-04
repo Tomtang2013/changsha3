@@ -256,7 +256,8 @@ body{
 /*    background: #222 url(../images/footer/blackStripe.png);*/
 /*    height: 479px;*/
     height:250px;
-    color: #A7A7A7;
+    color: #000000;
+/*    color: #A7A7A7;*/
     clear:both;
     padding-bottom: 40px;
     background-color: #231915;
