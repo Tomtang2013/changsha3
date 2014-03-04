@@ -54,11 +54,7 @@
    }
 
 body{
-/*    display:none;*/
-/*    font-family: fzlt_0;*/
-/*    background:#FFF url(../images/whiteStripe.png) fixed;*/
     font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important;
-
 }
 
 h1{
@@ -264,7 +260,8 @@ h1{
 /*    color: #A7A7A7;*/
     clear:both;
     padding-bottom: 40px;
-    background-color: #231915;
+/*    background-color: #231915;*/
+     background-color: #000000;
 /*    z-index: 888;*/
     position: relative;
     
