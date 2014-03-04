@@ -145,24 +145,24 @@ body{
 }
 .dashboard_main .dashboard_img1{
 /*   background: url(../images/main_image/dashboard_image1.jpg) 50% 0 no-repeat fixed;*/
-   background: url(../images/main_image/1.jpg) 50% 50% no-repeat fixed;
-   height:550px;
+   background: url(../images/main_image/1.jpg) 50% 0 no-repeat fixed;
+   height:515px;
 }
 
 .dashboard_main .dashboard_img2{
 /*   background: url(../images/main_image/dashboard_image2.jpg) 50% 0 no-repeat fixed;*/
    background: url(../images/main_image/2.jpg) 50% 0 no-repeat fixed;
-   height:550px;
+   height:515px;
 }
 .dashboard_main .dashboard_img3{
 /*   background: url(../images/main_image/dashboard_image3.jpg) 50% 0 no-repeat fixed;*/
    background: url(../images/main_image/3.jpg) 50% 0 no-repeat fixed;
-   height:550px;
+   height:515px;
 }
 .dashboard_main .dashboard_img4{
 /*   background: url(../images/main_image/dashboard_image4.jpg) 50% 0 no-repeat fixed;*/
     background: url(../images/main_image/4.jpg) 50% 0 no-repeat fixed;
-   height:550px;
+   height:515px;
 }
 .dashboard_main .small_log1{
     background: url(../images/main_image/dashboard_logo1.png) 50% 0 no-repeat fixed;
@@ -171,7 +171,7 @@ body{
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
-        height: 550px;
+        height: 515px;
 }
 
 .dashboard_main .small_log2{
@@ -181,7 +181,7 @@ body{
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
-        height:550px;
+        height:515px;
 }
 .dashboard_main .small_log3{
         background: url(../images/main_image/dashboard_logo3.png) 50% 0 no-repeat fixed;
@@ -190,7 +190,7 @@ body{
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
-        height:550px;
+        height:515px;
 }
 
 .dashboard_main .small_log4{
@@ -200,7 +200,7 @@ body{
     margin: 0 auto;
     position: absolute;
     width: 90%;
-    height:550px;
+    height:515px;
 }
 .dashboard_main .small_log{
     z-index: 200;

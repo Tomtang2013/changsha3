@@ -16,12 +16,26 @@ if ($nid) {
     $news->n_editor = $node->field_n_editor['und'][0]['value'];
     $news->n_public_date = $node->field_public_date['und'][0]['value'];
     $paths = array();
-    get_fild_n_b_img_path($paths,$node->field_n_b_image1['und'][0]['uri']);
-    get_fild_n_b_img_path($paths,$node->field_n_b_image2['und'][0]['uri']);
-    get_fild_n_b_img_path($paths,$node->field_n_b_image3['und'][0]['uri']);
-    get_fild_n_b_img_path($paths,$node->field_n_b_image4['und'][0]['uri']);
-    get_fild_n_b_img_path($paths,$node->field_n_b_image5['und'][0]['uri']);
-    get_fild_n_b_img_path($paths,$node->field_n_b_image6['und'][0]['uri']);
+
+    if (!empty($node->field_n_b_image1['und'])) {
+        get_fild_n_b_img_path($paths, $node->field_n_b_image1['und'][0]['uri']);
+    }
+    if (!empty($node->field_n_b_image2['und'])) {
+        get_fild_n_b_img_path($paths, $node->field_n_b_image2['und'][0]['uri']);
+    }
+    if (!empty($node->field_n_b_image3['und'])) {
+        get_fild_n_b_img_path($paths, $node->field_n_b_image3['und'][0]['uri']);
+    }
+    if (!empty($node->field_n_b_image4['und'])) {
+        get_fild_n_b_img_path($paths, $node->field_n_b_image4['und'][0]['uri']);
+    }
+    if (!empty($node->field_n_b_image5['und'])) {
+        get_fild_n_b_img_path($paths, $node->field_n_b_image5['und'][0]['uri']);
+    }
+    if (!empty($node->field_n_b_image6['und'])) {
+        get_fild_n_b_img_path($paths, $node->field_n_b_image6['und'][0]['uri']);
+    }
+
     $news->n_body = $node->body['und'][0]['value'];
     $news->title = $node->title;
 
@@ -32,14 +46,13 @@ if ($nid) {
 //    }
 }
 
-function get_fild_n_b_img_path(&$array,$path){
-    if($path && !empty($path)){
+function get_fild_n_b_img_path(&$array, $path) {
+    if ($path && !empty($path)) {
         $url = file_create_url($path);
         $url = parse_url($url);
         $array[] = $url['path'];
     }
     return $array;
-    
 }
 ?>
 
@@ -83,7 +96,7 @@ function get_fild_n_b_img_path(&$array,$path){
                                             class="<?php if ($i == 0)
                                             print "active"; $i++ ?>"
                                         ></li>
-                                        <?php  endforeach ?>
+                                        <?php endforeach ?>
                                 </ol>
                                 <div class="carousel-inner">
                                     <?php $i = 0;
@@ -92,30 +105,30 @@ function get_fild_n_b_img_path(&$array,$path){
                                                 print "active"; $i++ ?>">
                                            <img  alt="" class="news_detail_img" style="width:100%"
                                                  src="<?php print $path; ?>">
-                                         </div>
-                                    <?php  endforeach?>
-                                </div>
-                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-                            </div>
-                            <div class="container" style="padding-left: 0px;padding-top:10px;width:100%;">
-                                <div class="row" style="font-family:super-fine-black;line-height:26px;">
-                                    <div class="col-md-8 news_detail_txt">
-                                    <?php print nl2br($news->n_body); ?>
+                                       </div>
+                                    <?php endforeach ?>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
                                     </div>
-
                                 </div>
+                                <div class="container" style="padding-left: 0px;padding-top:10px;width:100%;">
+                                    <div class="row" style="font-family:super-fine-black;line-height:26px;">
+                                        <div class="col-md-8 news_detail_txt">
+                                    <?php print nl2br($news->n_body); ?>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div style="clear:both;"></div>
             </div>
+
+            <div style="clear:both;"></div>
         </div>
     </div>
+</div>
