@@ -61,6 +61,10 @@ body{
 
 }
 
+h1{
+     font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important;
+}
+
 .dashboard-page{
      background-color: #494949!Important;
      max-width: 1351px;
