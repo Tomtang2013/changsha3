@@ -176,6 +176,7 @@ body{
 	position: absolute;
         width: 90%;
         height: 515px;
+        background-size:120px ;
 }
 
 .dashboard_main .small_log2{
@@ -186,10 +187,11 @@ body{
 	position: absolute;
         width: 90%;
         height:515px;
+        background-size:100px ;
 }
 .dashboard_main .small_log3{
         background: url(../images/main_image/dashboard_logo3.png) 50% 0 no-repeat fixed;
-/*        background-size:140px ;*/
+        background-size:170px ;
         z-index: 200;
 	margin: 0 auto;
 	position: absolute;
@@ -205,6 +207,7 @@ body{
     position: absolute;
     width: 90%;
     height:515px;
+    background-size:160px ;
 }
 .dashboard_main .small_log{
     z-index: 200;

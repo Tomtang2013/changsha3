@@ -36,7 +36,7 @@
     <div class="dashboard_img dashboard_img1" id="dashboard_img1">
          <div class="story">
             <a href="<?php print $bg1_path;?>">
-                <div class=" small_log1" style="background-position: 90% 220px;">
+                <div class=" small_log1" style="background-position: 80% 220px;">
                 </div>
             </a>
         </div>
@@ -44,7 +44,7 @@
     <div class="dashboard_img dashboard_img2" id="dashboard_img2">
         <div class="story">
                 <a href="<?php print $bg2_path;?>">
-                <div class=" small_log2" style="background-position: 85% 220px;">
+                <div class=" small_log2" style="background-position: 80% 220px;">
 <!--                    <a href="#" style="min-width:90px;min-height:130px;margin-left: 80%;margin-top: 100px;"> aaa </a>-->
                 </div>
                 </a>
