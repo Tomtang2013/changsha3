@@ -41,7 +41,7 @@ $coo_path = $base_path . 'news_service/cooperation';
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
-                    潇湘晨报、晨报周刊、红网、快乐笨人报、腾讯大湘网、长啦网、长株潭报等
+                    潇湘晨报、晨报周刊、红网、快乐老人报、腾讯大湘网、长啦网、长株潭报等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
