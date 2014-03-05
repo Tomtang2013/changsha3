@@ -1,6 +1,6 @@
 <?php
     global $base_path;
-    $bg1_path = '#';//$base_path.'work/detail/24';
+    $bg1_path = $base_path .'news/summary';
     $bg2_path = $base_path.'work/detail/11';
     $bg3_path = $base_path.'work/detail/10';
     $bg4_path = $base_path.'work/detail/24';

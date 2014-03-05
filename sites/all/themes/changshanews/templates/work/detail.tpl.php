@@ -70,10 +70,16 @@ if($nid){
     jQuery(function(){
 
     });
+
+    jQuery(window).resize(function() {
+      var height = jQuery('.img-responsive').css('height');
+      jQuery('.work_enviro_header').css('min-height',height);
+
+    });
 </script>
 
 <div class="work_enviro_header ">
-     <img src="<?php print $work->w_top_image; ?>" alt="" style="width:100%;padding-bottom:5px; " class="img-responsive"/>
+    <img src="<?php print $work->w_top_image; ?>sites/default/files/ed_top.jpg" alt="" style="width:100%;padding-bottom:5px; " class="img-responsive"/>
     <div class="container" style="margin-top:-55%;">
         <div class="row">
             <div class="col-md-3    col-md-offset-9  col-sm-offset-9 work_navs" >
@@ -87,8 +93,9 @@ if($nid){
             </div>
         </div>
     </div>
-   
+    <div style="clear:both;"></div>
 </div>
+
 <div id="work_enviro_main" class="work_enviro_main" >
     <div class="container">
         <div class="row">
