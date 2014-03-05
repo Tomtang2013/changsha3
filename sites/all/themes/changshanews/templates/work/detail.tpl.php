@@ -79,7 +79,7 @@ if($nid){
 </script>
 
 <div class="work_enviro_header ">
-    <img src="<?php print $work->w_top_image; ?>sites/default/files/ed_top.jpg" alt="" style="width:100%;padding-bottom:5px; " class="img-responsive"/>
+    <img src="<?php print $work->w_top_image; ?>" alt="" style="width:100%;padding-bottom:5px; " class="img-responsive"/>
     <div class="container" style="margin-top:-55%;">
         <div class="row">
             <div class="col-md-3    col-md-offset-9  col-sm-offset-9 work_navs" >
