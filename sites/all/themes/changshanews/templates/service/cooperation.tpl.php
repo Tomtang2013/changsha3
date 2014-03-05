@@ -55,6 +55,18 @@ $coo_path = $base_path . 'news_service/cooperation';
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
                     <div><p> 国家新闻出版总署、湖南省委宣传部</p></div>
+                </div>
+            </div>
+            <div class="left col-lg-3  col-md-3 col-xs-3">
+                <div class="left_content">
+                       政府
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="right col-lg-8 col-md-8 col-xs-8">
+                <div class="right_content">
                     <div><p> 房产：恒嘉地产（泊富商业广场）、湘江锦绣、湘域相遇等</p>
                     <p> 快消产品：酒鬼酒、金健米业、邵阳大曲、黄山头、泸州老窖、烟京啤酒等</p>
                     <p> 汽车及经销商：广汽本田、比亚迪、仁孚汽车、永通汽车等</p>
@@ -65,11 +77,10 @@ $coo_path = $base_path . 'news_service/cooperation';
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
                 <div class="left_content">
-                       政企
+                       企业
                 </div>
             </div>
         </div>
-
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
                 <div class="right_content">
