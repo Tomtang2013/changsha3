@@ -79,7 +79,7 @@ function get_fild_n_b_img_path(&$array, $path) {
                     <div class="col-md-12" style="padding-left:66px;" >
                         <div style="height:20px;background-color: yellow;"></div>
                         <div >
-                            <div style="height:35px;font-family:fiber-black;padding-top: 5px;">
+                            <div style="height:35px;font-family:fiber-black;padding-top: 5px;font-family: super-fine-black;">
                                 <div style="float:left;font-size: 30px;"><?php print $news->title; ?></div>
                                 <div style="float:right;">
                                     <span style="padding-right:20px;">发布于：<?php print $news->n_public_date; ?></span>

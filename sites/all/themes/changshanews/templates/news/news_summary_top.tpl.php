@@ -4,7 +4,7 @@
 <script type="text/javascript">
 </script>
 
-<div class="work_summary_top " style="min-height: 250px;">
+<div class="work_summary_top " style="min-height: 250px;font-family: super-fine-black;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
