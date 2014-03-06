@@ -1,4 +1,4 @@
-<div class="work_summary_top">
+<div class="work_summary_top super-fine-black">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">

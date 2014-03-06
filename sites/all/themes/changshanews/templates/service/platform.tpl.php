@@ -12,7 +12,7 @@ $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
 
 </script>
 
-<div class="service_design_header service_platform_header_bg" id="platform_header">
+<div class="service_design_header service_platform_header_bg super-fine-black" id="platform_header">
     <div class="container">
         <div class="row" style="padding-top:50px;">
             <div class="col-md-3">
@@ -34,7 +34,7 @@ $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
 </div>
 
 
-<div id="design_main" class="design_main">
+<div id="design_main" class="design_main  super-fine-black">
     <div class="container" style="padding-left:66px;">
     <div class="row" style="padding-top:50px;">
         <div  class="service-item-content col-md-12  col-xs-12">

@@ -25,6 +25,18 @@
     width:60%;
 }
 
+.work_about .div_right {
+    background-color: transparent;
+    margin-top: 15px;
+    padding-left: 0px;
+    padding-right:15px;
+    float: right;
+    color:yellow;
+    clear :right;
+    letter-spacing:4px;
+/*    font-family: 'Pontano Sans', sans-serif;*/
+}
+
 .work_about_team_main{
     padding-left:49px;
     width:80%;

@@ -10,7 +10,7 @@ $coo_path = $base_path . 'news_service/cooperation';
         jQuery( ".active" ).find('a').css('color','black');
     });
 </script>
-<div class="service_design_header service_design_header_bg" id="platform_header">
+<div class="service_design_header service_design_header_bg super-fine-black" id="platform_header">
     <div class="container">
         <div class="row" style="padding-top:50px;">
             <div class="col-md-3">
@@ -34,7 +34,7 @@ $coo_path = $base_path . 'news_service/cooperation';
 
 
 
-<div id="design_main" class="design_main">
+<div id="design_main" class="design_main  super-fine-black">
     <div class="container" style="padding-left:66px;">
         <div class="row" style="padding-top:50px;">
             <div  class="service-item-content col-md-12  col-xs-12">

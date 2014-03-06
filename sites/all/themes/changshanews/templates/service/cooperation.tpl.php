@@ -12,7 +12,7 @@ $coo_path = $base_path . 'news_service/cooperation';
     });
 </script>
 
-<div class="service_design_header service_cooperation_header_bg" id="platform_header">
+<div class="service_design_header service_cooperation_header_bg super-fine-black" id="platform_header">
     <div class="container">
         <div class="row" style="padding-top:50px;">
             <div class="col-md-3">
@@ -32,7 +32,7 @@ $coo_path = $base_path . 'news_service/cooperation';
         </div>
     </div>
 </div>
-<div id="design_main" class="design_main" >
+<div id="design_main" class="design_main  super-fine-black" >
     <div class="container" >
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8"></div>

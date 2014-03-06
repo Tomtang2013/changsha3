@@ -54,7 +54,7 @@
 
 .work_about .div_right {
     background-color: transparent;
-    padding-top: 15px;
+    margin-top: -15px;
     padding-left: 0px;
     padding-right:15px;
     float: right;

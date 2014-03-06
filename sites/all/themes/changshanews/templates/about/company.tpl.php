@@ -17,7 +17,7 @@ $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
 
 <div id="work_about" class="work_about " >
     <div class="container">
-        <div class="row" style="padding-top:50px;">
+        <div class="row super-fine-black" style="padding-top:50px;">
             <ul class="ul_left" style="padding-left:65px;">
                 <li class="active"><a href="<?php print $about_company_path; ?>">关于公司</a></li>
                 <li class="unactive"><a href="<?php print $about_team_path; ?>">关于团队</a></li>

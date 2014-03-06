@@ -78,9 +78,10 @@
 .service_design_header .div_right span {
     background-color: #ffffff;
     padding:5px;
-    font-size: 20px;
+    font-size: 16px;
     clear:right;
     float: right;
+    text-align: right;
     letter-spacing:2px;
 }
 /*.header_message{
