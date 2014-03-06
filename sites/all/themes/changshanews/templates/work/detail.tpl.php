@@ -68,16 +68,20 @@ if($nid){
 
 <script type="text/javascript">
     jQuery(function(){
-
+        re_set_top_img_height();
     });
 
     jQuery(window).resize(function() {
+      re_set_top_img_height();
+    });
+
+    function re_set_top_img_height(){
       var height = jQuery('.img-responsive').css('height');
       height = height.replace(/px/,"");
       height = height - 8;
       height = height + 'px';
       jQuery('.work_enviro_header').css('min-height',height);
-    });
+    }
 </script>
 
 <div class="work_enviro_header ">
