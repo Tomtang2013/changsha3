@@ -2,6 +2,13 @@
 .header_left{ float:left;}
 .header_right{ float:right;}
 
+body{
+    font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important;
+}
+
+h1{
+    font-family: Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important;
+}
 
 .work_about_company_content{
     padding-left:49px;
