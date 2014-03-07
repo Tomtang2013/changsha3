@@ -90,7 +90,7 @@
 .work_enviro_header{
      width: 100%;
 /*     background-size: cover!important;*/
-     min-height: 775px;
+/*     height: 775px;*/
 }
 /*.work_enviro_header img{
     width: 1351px;
@@ -115,7 +115,7 @@
 }
 .work_enviro_main_content_right{
     float: left;
-    width: 700px;
+    width: 600px;
     padding:30px 0px 30px 0px;
     font-size: 12px;
 /*    font-family: fine-black;*/
