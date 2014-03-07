@@ -102,7 +102,7 @@ if($nid){
     <div style="clear:both;"></div>
 </div>
 
-<div id="work_enviro_main super-fine-black" class="work_enviro_main" >
+<div id="work_enviro_main " class="work_enviro_main super-fine-black" >
     <div class="container">
         <div class="row">
             <div class="col-md-4 ">
