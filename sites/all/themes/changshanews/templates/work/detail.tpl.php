@@ -67,26 +67,27 @@ if($nid){
 ?>
 
 <script type="text/javascript">
-    jQuery(function(){
-        setTimeout(re_set_top_img_height(),1000);
-    });
-
-    jQuery(window).resize(function() {
-      re_set_top_img_height();
-    });
-
-    function re_set_top_img_height(){
-      var height = jQuery('.img-responsive').css('height');
-      height = height.replace(/px/,"");
-      height = height - 8;
-      height = height + 'px';
-      jQuery('.work_enviro_header').css('min-height',height);
-    }
+   
+//    jQuery(function(){
+//        setTimeout(re_set_top_img_height(),1000);
+//    });
+//
+//    jQuery(window).resize(function() {
+//      re_set_top_img_height();
+//    });
+//
+//    function re_set_top_img_height(){
+//      var height = jQuery('.img-responsive').css('height');
+//      height = height.replace(/px/,"");
+//      height = height - 8;
+//      height = height + 'px';
+//      jQuery('.work_enviro_header').css('min-height',height);
+//    }
 </script>
 
-<div class="work_enviro_header ">
-    <img src="<?php print $work->w_top_image; ?>" alt="" style="width:100%;padding-bottom:5px;height: 775px; " class="img-responsive"/>
-    <div class="container" style="margin-top:-55%;">
+<div class="work_enviro_header" id="work_enviro_header"
+     style="background:url(<?php print  $work->w_top_image; ?>);height:755px;width:100%; ">
+    <div class="container" style="padding-top:30px;padding-left:300px;">
         <div class="row">
             <div class="col-md-3    col-md-offset-9  col-sm-offset-9 work_navs" >
                     <a class="work_nav" href="<?php print $nav_grid; ?>" ><img class="nav_img" src="<?php print $theme_path ?>/images/nav_grid.png"  alt=""/></a>
@@ -101,6 +102,7 @@ if($nid){
     </div>
     <div style="clear:both;"></div>
 </div>
+
 
 <div id="work_enviro_main " class="work_enviro_main " >
     <div class="container">
