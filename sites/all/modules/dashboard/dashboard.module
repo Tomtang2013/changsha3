@@ -32,7 +32,7 @@ function dashboard_help($path, $arg) {
 function dashboard_permission() {
     return array(
         'dashboard' => array(
-            'title' => t('主页'),
+            'title' => t('设计长沙'),
         ),
     );
 }
@@ -40,7 +40,7 @@ function dashboard_permission() {
 function dashboard_menu() {
     $items = array();
     $items['dashboard'] = array(
-        'title' => t('主页'),
+        'title' => t('设计长沙'),
         'page callback' => 'dashboard_call_back',
         'access arguments' => array('dashboard'),
         'weight' => -47,
