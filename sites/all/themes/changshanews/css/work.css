@@ -89,8 +89,12 @@
 
 .work_enviro_header{
      width: 100%;
+/*     background-size: cover!important;*/
+/*     height: 775px;*/
 }
-
+/*.work_enviro_header img{
+    width: 1351px;
+}*/
 .work_enviro_main{
     background-color:black;
 /*    min-height: 180px;*/
