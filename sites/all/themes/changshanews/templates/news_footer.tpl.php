@@ -40,8 +40,13 @@
     </div>
 
 </div>
-
+<div id="baidu">
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1f9d2a7349c2da46926d0b46ed9312d1' type='text/javascript'%3E%3C/script%3E"));
+
+  jQuery(function(){
+      jQuery('#baidu').find('a').hide();
+    });
 </script>
+</div>
