@@ -84,7 +84,7 @@ function get_fild_n_b_img_path(&$array, $path) {
                                 <div style="float:right;">
                                     <span style="padding-right:20px;">发布于：<?php print $news->n_public_date; ?></span>
                                     <span style="padding-right:20px;">来源：<?php print $news->n_origin; ?></span>
-                                    <span >编辑：<?php print $news->n_editor; ?></span>
+                                    <span ><?php print $news->n_editor; ?></span>
                                 </div>
                             </div>
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
