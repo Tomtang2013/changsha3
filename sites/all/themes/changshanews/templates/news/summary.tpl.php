@@ -17,6 +17,15 @@ foreach ($result as $row) {
     $paths[] = $url['path'];
     $news_list[] = $news;
 }
+
+function compareItemsDate($a, $b){
+    if ( strtotime($a->public_date) < strtotime($b->public_date) ) return 1;
+    if ( strtotime($a->public_date) > strtotime($b->public_date) ) return -1;
+    return 0; // equality
+}
+
+uasort($news_list, "compareItemsDate");
+
 ?>
 
 <script type="text/javascript">
