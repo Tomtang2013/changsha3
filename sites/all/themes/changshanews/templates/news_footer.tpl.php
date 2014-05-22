@@ -1,6 +1,20 @@
 <?php
     global $base_path;
+//    scripts[] = js/fancybox/jquery.mousewheel-3.0.4.pack.js
+//scripts[] = js/fancybox/jquery.fancybox-1.3.4.pack.js
 ?>
+
+<script type="text/javascript" src="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+     jQuery(function(){
+         jQuery("a#weixin").fancybox({
+              helpers : {
+               'overlayColor'             :        '#ffffff'
+              } // helpers
+            }); // fancybox
+     });
+</script>
 
 
 
@@ -33,7 +47,7 @@
             <div class="new_media  col-md-4 col-sm-6">
                 <div class="footer_item">新媒体</div>
                 <div class="footer_item"><a href="http://weibo.com/ddcs0319/home?wvr=5&c=spr_web_360_hao360_weibo_t002"><img class="new_media_img" src="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/images/footer/wb.png" alt=""></a></div>
-                <div class="footer_item"><a href=""><img class="new_media_img" src="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/images/footer/wx.png" alt=""></a></div>
+                <div class="footer_item"><a id="weixin" href="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/images/footer/erweima.jpg"><img class="new_media_img" src="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/images/footer/wx.png" alt=""></a></div>
                 <div class="footer_item"> <a href=""><img class="new_media_img" src="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/images/footer/facebook.png" alt=""></a></div>
                 <div class="footer_item"><a href=""><img class="new_media_img" src="<?php print $base_path.drupal_get_path('theme', 'changshanews'); ?>/images/footer/twritter.png" alt=""></a></div>
             </div>
