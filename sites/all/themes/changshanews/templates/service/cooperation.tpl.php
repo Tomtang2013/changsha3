@@ -33,7 +33,7 @@ $coo_path = $base_path . 'news_service/cooperation';
     </div>
 </div>
 <div id="design_main" class="design_main  super-fine-black" >
-    <div class="container" >
+    <div class="container" style="margin-top: -120px;">
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8"></div>
             <div class="left col-lg-3  col-md-3 col-xs-3"></div>
