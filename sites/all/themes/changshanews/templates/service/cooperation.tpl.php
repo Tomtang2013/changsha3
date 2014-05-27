@@ -40,12 +40,12 @@ $coo_path = $base_path . 'news_service/cooperation';
         </div>
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
-                <div class="right_content">
+                <div class="right_content" style="height:80px;">
                     潇湘晨报、晨报周刊、红网、快乐老人报、腾讯大湘网、长啦网、长株潭报等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
-                <div class="left_content">
+                <div class="left_content" style="height:80px;">
                        媒体
                 </div>
             </div>
@@ -53,12 +53,12 @@ $coo_path = $base_path . 'news_service/cooperation';
 
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
-                <div class="right_content">
+                <div class="right_content" style="height:80px;">
                     <div><p> 国家新闻出版总署、湖南省委宣传部</p></div>
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
-                <div class="left_content">
+                <div class="left_content" style="height:80px;">
                        政府
                 </div>
             </div>
@@ -76,19 +76,19 @@ $coo_path = $base_path . 'news_service/cooperation';
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
-                <div class="left_content">
+                <div class="left_content" >
                        企业
                 </div>
             </div>
         </div>
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
-                <div class="right_content">
+                <div class="right_content" style="height:80px;">
                     湖南省森林植物园、宁乡旅游局等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
-                <div class="left_content">
+                <div class="left_content" style="height:80px;">
                        区域
                 </div>
             </div>
@@ -96,12 +96,12 @@ $coo_path = $base_path . 'news_service/cooperation';
 
         <div class="row ">
             <div class="right col-lg-8 col-md-8 col-xs-8">
-                <div class="right_content">
+                <div class="right_content" style="height:80px;">
                     长沙国际车展、橘洲国际音乐节、新年音乐会、旅游博览会等
                 </div>
             </div>
             <div class="left col-lg-3  col-md-3 col-xs-3">
-                <div class="left_content">
+                <div class="left_content" style="height:80px;">
                        展会
                 </div>
             </div>
