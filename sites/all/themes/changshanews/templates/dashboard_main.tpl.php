@@ -10,6 +10,7 @@
     jQuery(function(){
             jQuery('#cs_nav').localScroll(800);
             jQuery('.small_log').parallax("50%", 1);
+			jQuery('#dashboard_img5').parallax("50%", 0.4);
             jQuery('#dashboard_img1').parallax("50%", 0.4);
             jQuery('#dashboard_img2').parallax("50%", 0.4);
             jQuery('#dashboard_img3').parallax("50%", 0.4);
@@ -26,6 +27,7 @@
 </script>
 
 <ul id="cs_nav">
+	<li  class="case " style="display: list-item;"><a href="#dashboard_img5" class="nav05">ee</a></li>
     <li  class="case " style="display: list-item;"><a href="#dashboard_img1" class="nav01">aa</a></li>
     <li class="case " style="display: list-item;"><a href="#dashboard_img2" class="nav02">bb</a></li>
     <li class="case " style="display: list-item;"><a href="#dashboard_img3" class="nav03">cc</a></li>
@@ -33,6 +35,11 @@
 </ul>
 
 <div class="dashboard_main">
+	<div class="dashboard_img dashboard_img5" id="dashboard_img5">
+         <div class="story">
+           
+        </div>
+    </div>
     <div class="dashboard_img dashboard_img1" id="dashboard_img1">
          <div class="story">
             <a href="<?php print $bg1_path;?>">
