@@ -26,7 +26,7 @@ foreach ($result as $row) {
     $video_work = new stdClass();
     $video_work->nid = $row->nid;
     $video_work->video_name = $node->field_video_name['und'][0]['value'];
-    $video_work->video_path = $node->video_path['und'][0]['value'];
+    $video_work->video_path = $node->field_video_path['und'][0]['value'];
     $video_work->video_desc = $node->field_video_desc['und'][0]['value'];
     $video_work->video_owner = $node->field_video_owner['und'][0]['value'];
     $video_work->video_date = $node->field_video_date['und'][0]['value'];
@@ -202,7 +202,7 @@ foreach ($result as $row) {
                 <div class="bd"><div class="inner"><div class="zt_c_19" id="ztc_20">
                             <div class="biakn">
                                 <p class="biaotix"><img src="http://mat1.gtimg.com/hn/zhangfeng/mlhn/biaoti_04.png"></p>
-                                <ul>
+                                <ul class="zhanshi_03">
                                     <?php  foreach($video_works as $video_work):?>
                                     <li>
                                         <div class="ship">
@@ -218,17 +218,17 @@ foreach ($result as $row) {
                                                        flashvars="<?php print $video_work->video_path; ?>">
                                             </object>
                                         </div>
-                                        <div class="wenzidhus">
-                                            <h4>
-                                            <p> 作品名：<?php print $video_work->video_name; ?></p>
-                                            <p> 作者：<?php print $video_work->video_owner; ?></p>
-                                                创意说明：</h4>
+                                        <div class="wenzidhus" style="padding-right:20px;">
+                                           
+                                            <h4>作品名：<?php print $video_work->video_name; ?></h4>
+                                            <h4> 作者：<?php print $video_work->video_owner; ?></h4>
+                                             <h4>创意说明：</h4>
                                             <p><?php print $video_work->video_desc; ?></p>
                                         </div>
                                     </li>
                                     <?php endforeach; ?>
-                                    <?php require_once 'vote-video-sample.tpl.php'; ?>
                                 </ul>
+                               
                             </div>
                         </div>
                     </div>
