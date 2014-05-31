@@ -13,6 +13,7 @@ stylesheets[all][] = css/dashboard.css
 stylesheets[all][] = css/service.css
 stylesheets[all][] = css/work.css
 stylesheets[all][] = css/company.css
+stylesheets[all][] = css/designvote.css
 ;stylesheets[all][] = js/slider/generic.css
 stylesheets[all][] = js/bxslider/jquery.bxslider.css
 

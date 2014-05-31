@@ -95,6 +95,21 @@ function dashboard_menu() {
         'weight' => -47,
     );
 
+    $items['designvote'] = array(
+        'title' => t('新闻'),
+        'page callback' => 'designvote_call_back',
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
+     $items['designvote/submit/%'] = array(
+        'title' => t('新闻'),
+        'page callback' => 'designvote_submit_call_back',
+         'page arguments' => array(2),
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
+
 
     return $items;
 }
@@ -138,6 +153,56 @@ function news_summary_call_back(){
 function news_detail_call_back(){
     $pageContent = '';
     return $pageContent;
+}
+
+function designvote_call_back(){
+    $pageContent = '';
+    return $pageContent;
+}
+
+function designvote_submit_call_back($id) {
+    $ip_address = GetIP();
+    if(isVoted($ip_address)){
+        db_insert('design_vote')
+            ->fields(array(
+                'vote_url' => $ip_address,
+                'vote_id' => $id,
+                'vote_date' => time(),
+            ))->execute();
+        $return['status'] = 'success';
+        $return['message'] = '投票成功。  ';
+    } else {
+        $return['status'] = 'error';
+        $return['message'] = '投票失败，请不要重复投票。  ';
+    }
+    
+      
+    drupal_json_output($return);
+}
+
+function isVoted($ip_address){
+    $result = db_query("SELECT count(id) as count FROM design_vote WHERE vote_url = :vote_url"
+                , array(':vote_url' => $ip_address))->fetchObject();
+    if($result->count > 0){
+        return false;
+    }
+    return true;
+}
+
+function GetIP() {
+    if (!empty($_SERVER["HTTP_CLIENT_IP"])) {
+        $cip = $_SERVER["HTTP_CLIENT_IP"];
+    } else if (!empty($_SERVER["HTTP_X_FORWARDED_FOR"])) {
+        $cip = $_SERVER["HTTP_X_FORWARDED_FOR"];
+    } else if (!empty($_SERVER["REMOTE_ADDR"])) {
+        $cip = $_SERVER["REMOTE_ADDR"];
+    } else {
+        $cip = '';
+    }
+    preg_match("/[\d\.]{7,15}/", $cip, $cips);
+    $cip = isset($cips[0]) ? $cips[0] : 'unknown';
+    unset($cips);
+    return $cip;
 }
 
 function get_nav_nid($nid,$type,$opt){

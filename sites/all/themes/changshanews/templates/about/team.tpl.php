@@ -102,7 +102,7 @@ uasort($experts, "compareItems");
                     ?>
                     <div class="team_member_img  col-md-3">
                             <a href="<?php print $about_memberdetail_path.'/'.$consultant->nid ?>" >
-                                <img   class="thumbnail"  src="<?php print $path; ?>" style="width:100%;" />
+                                <img   class="thumbnail"  src="<?php print $path; ?>" style="width:100%;" alt="" />
                             </a>
                             <div class="member_name "><?php print $consultant->m_name; ?></div>
                     </div>
