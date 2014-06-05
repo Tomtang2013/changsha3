@@ -1,3 +1,58 @@
+.vote_design_header{
+    background: url(../images/designvote/top_header.jpg);
+    width:100%;
+    height:650px;
+}
+.vote_design_main{
+    background: url(../images/designvote/background.jpg);
+    width:100%;
+    min-width: 1000px;
+}
+
+.vote_design_main_ul{
+     width: 100%;
+}
+
+.vote_design_main_li{
+     width: 70%;
+     font-size: 20px;
+     height:50px;
+     text-align:center;
+     list-style-type:none;
+}
+
+.vote{
+   /*padding-top:20px;*/
+}
+
+.vote h4{
+  color:blue;
+  font-weight:bold;
+}
+
+.vote p{
+   color:white;
+}
+
+.vote_item{
+   color:blue;
+}
+
+.vote p span{
+   color:blue;
+}
+
+.vote-tab{
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    color:blue;
+    margin-bottom:50px;
+    padding-bottom:30px;
+    padding-top:20px;
+}
+
+
+
 .design-vote-manin{
     background: url(../images/designvote/scribble_light.png);
 }
