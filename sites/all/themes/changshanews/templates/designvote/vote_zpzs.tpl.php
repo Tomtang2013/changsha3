@@ -86,7 +86,7 @@ foreach ($result as $row) {
                         </div>
                     </div>
                  <?php endforeach; ?>
-                <?php require_once 'vote-sample.tpl.php'; ?>
+               
             </div>
         </div>
         

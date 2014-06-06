@@ -25,7 +25,7 @@
 <div id="vote_design_main" class="vote_design_main">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 ">
+            <div class="col-md-3 col-sm-3">
                 <ul style="float:right; width: 100%;">
                     <li class="vote_design_main_li"><a href="#tab1">活动概括</a></li>
                     <li class="vote_design_main_li"><a href="#tab2">参赛方式</a></li>
@@ -38,7 +38,7 @@
                     <li class="vote_design_main_li">下载专区</li>
                 </ul>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-9">
                     <div id="tab1" class="vote-tab"><?php require_once 'vote_hdgk.tpl.php'; ?></div>
                     <div id="tab2" class="vote-tab"><?php require_once 'vote_csfs.tpl.php'; ?></div>
                     <div id="tab3" class="vote-tab"><?php require_once 'vote_dspw.tpl.php'; ?></div>
