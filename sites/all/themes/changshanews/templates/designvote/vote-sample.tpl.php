@@ -10,8 +10,10 @@
                         Duis rutrum porta tortor ut convallis.
                     </p>
                     <div>
-                        <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
-                        <input type="hidden" value="13" class="vote_id"/>
+                         <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?>
                     </div>
                 </div>
 
@@ -20,7 +22,10 @@
                     <p>
                         Donec a fermentum nisi.
                     </p>
-                    <div><input type="button" class="vote-button" value="<?php print $button_value; ?>"/></div>
+                    <div> <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?></div>
                 </div>
 
                 <div class="pin">
@@ -30,7 +35,10 @@
                         faucibus suscipit. Suspendisse rutrum turpis quis nunc
                         convallis quis aliquam mauris suscipit.
                     </p>
-                    <div><input type="button" class="vote-button" value="<?php print $button_value; ?>"/></div>
+                    <div> <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?></div>
                 </div>
 
                 <div class="pin">
@@ -40,7 +48,10 @@
                         faucibus suscipit. Suspendisse rutrum turpis quis nunc
                         convallis quis aliquam mauris suscipit.
                     </p>
-                    <div><input type="button" class="vote-button" value="<?php print $button_value; ?>"/></div>
+                    <div> <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?></div>
                 </div>
 
                 <div class="pin">
@@ -49,7 +60,10 @@
                         Donec a fermentum nisi. Integer dolor est, commodo ut
                         sagittis vitae, egestas at augue.
                     </p>
-                    <div><input type="button" class="vote-button" value="<?php print $button_value; ?>"/></div>
+                    <div> <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?></div>
                 </div>
 
                 <div class="pin">
@@ -60,7 +74,10 @@
                         ac blandit dui. Duis rutrum porta tortor ut convallis.
                         Duis rutrum porta tortor ut convallis.
                     </p>
-                    <div><input type="button" class="vote-button" value="<?php print $button_value; ?>"/></div>
+                    <div> <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?></div>
                 </div>
 
                 <div class="pin">

@@ -81,8 +81,11 @@ foreach ($result as $row) {
                         <p class="vote-p">作品名：<?php print $image_work->img_name; ?></p>
                         <p><?php print $image_work->img_desc; ?></p>
                         <div>
-                            <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
-                            <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                           
+                            <?php if($isJudges!=0):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                                <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
+                            <?php endif;?>
                         </div>
                     </div>
                  <?php endforeach; ?>

@@ -4,9 +4,12 @@
     height:650px;
 }
 .vote_design_main{
-    background: url(../images/designvote/background.jpg);
+    /*background: url(../images/designvote/background.jpg);*/
+    background: url(../images/designvote/scribble_light.png);
+    padding-top: 50px;
     width:100%;
     min-width: 1000px;
+    min-height:800px;
 }
 
 .vote_design_main_ul{
@@ -21,17 +24,18 @@
      list-style-type:none;
 }
 
+
 .vote{
    /*padding-top:20px;*/
 }
 
 .vote h4{
-  color:blue;
+  color:black;
   font-weight:bold;
 }
 
 .vote p{
-   color:white;
+   color:black;
 }
 
 .vote_item{

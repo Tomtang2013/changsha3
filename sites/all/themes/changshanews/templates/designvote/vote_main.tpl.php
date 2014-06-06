@@ -1,10 +1,21 @@
-<?php ?>
+<?php 
+global $user;
+$isJudges = 0;
+
+if ($user->id == 1 || in_array('Judges',$user->roles) ) {
+     $isJudges = 1;
+ } 
+
+?>
 <script  type="text/javascript">
     jQuery(function(){
         hideTab();
         showTabByIdx('#tab1');
         
+        jQuery('#vote_nav').localScroll(100);
+        
         jQuery('.vote_design_main_li').each(function(){
+            jQuery(this).find('a').css('color','black');
             jQuery(this).find('a').click(function(){
                 var href = jQuery(this).attr('href');
                  hideTab();
@@ -26,7 +37,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 ">
-                <ul style="float:right; width: 100%;">
+                <ul style="float:right; width: 100%;" id="vote_nav">
                     <li class="vote_design_main_li"><a href="#tab1">活动概括</a></li>
                     <li class="vote_design_main_li"><a href="#tab2">参赛方式</a></li>
                     <li class="vote_design_main_li"><a href="#tab3">大赛评委</a></li>
