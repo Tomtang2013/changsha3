@@ -37,7 +37,7 @@ function preparePW($name,$desc,$imagePath=""){
                  ?>
                     <div class="team_member_img  col-md-4">
                             <img src="<?php print $path; ?>" alt="" />
-                            <div style="color:white;padding-top:5px;"><?php print $pw->name; ?></div>
+                            <div style="color:black;padding-top:5px;"><?php print $pw->name; ?></div>
                             <div><?php print $pw->desc; ?></div>
                     </div>
                  <?php endforeach; ?>
