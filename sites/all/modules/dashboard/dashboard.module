@@ -96,14 +96,14 @@ function dashboard_menu() {
     );
 
     $items['designvote'] = array(
-        'title' => t('新闻'),
+        'title' => t('设计投票'),
         'page callback' => 'designvote_call_back',
         'access arguments' => array('dashboard'),
         'weight' => -47,
     );
 
      $items['designvote/submit/%'] = array(
-        'title' => t('新闻'),
+        'title' => t('设计投票'),
         'page callback' => 'designvote_submit_call_back',
          'page arguments' => array(2),
         'access arguments' => array('dashboard'),
