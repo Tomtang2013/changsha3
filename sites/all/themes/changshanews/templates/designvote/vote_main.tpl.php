@@ -1,7 +1,8 @@
 <?php ?>
 <script  type="text/javascript">
     jQuery(function(){
-        jQuery('#vote_ul').localScroll(800);
+//        jQuery('#vote_ul').localScroll(800);
+
         hideTab();
         showTabByIdx('#tab1');
         jQuery('.vote_design_main_li').each(function(){
@@ -9,6 +10,9 @@
                 var href = jQuery(this).attr('href');
                  hideTab();
                  showTabByIdx(href);
+                 jQuery('html, body').animate({
+                    scrollTop: 650
+                 }, 1000);
             });
         });
     });
@@ -38,7 +42,7 @@
                     <li class="vote_design_main_li">下载专区</li>
                 </ul>
             </div>
-            <div class="col-md-9 col-sm-9">
+            <div class="col-md-9 col-sm-9" id="design_vote_content">
                     <div id="tab1" class="vote-tab"><?php require_once 'vote_hdgk.tpl.php'; ?></div>
                     <div id="tab2" class="vote-tab"><?php require_once 'vote_csfs.tpl.php'; ?></div>
                     <div id="tab3" class="vote-tab"><?php require_once 'vote_dspw.tpl.php'; ?></div>
