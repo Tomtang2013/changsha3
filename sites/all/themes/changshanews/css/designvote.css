@@ -4,8 +4,11 @@
     height:650px;
 }
 .vote_design_main{
-    background: url(../images/designvote/background.jpg);
-    width:100%;
+/*    background: url(../images/designvote/background.jpg);*/
+      background: url(../images/designvote/scribble_light.png);
+      padding-top: 30px;
+      padding-bottom:30px;
+      width:100%;
     
 }
 
@@ -19,8 +22,12 @@
      height:50px;
      text-align:center;
      list-style-type:none;
+       color:black;
 }
 
+.vote_design_main_li a{
+    color:black;
+}
 .vote{
    /*padding-top:20px;*/
 }
@@ -31,7 +38,7 @@
 }
 
 .vote p{
-   color:white;
+   color:black;
 }
 
 .vote_item{
@@ -54,7 +61,7 @@
 
 
 .design-vote-manin{
-    background: url(../images/designvote/scribble_light.png);
+/*    background: url(../images/designvote/scribble_light.png);*/
 }
 .vote-button{
     float:right;

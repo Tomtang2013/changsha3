@@ -1,4 +1,10 @@
 <?php
+global $user;
+$is_judges = 0;
+if($user->uid || ( in_array('judges',$user->roles) )){
+    $is_judges = 1;
+}
+
 global $base_path;
 $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
 $button_value = "投我一票";
@@ -81,7 +87,9 @@ foreach ($result as $row) {
                         <p class="vote-p">作品名：<?php print $image_work->img_name; ?></p>
                         <p><?php print $image_work->img_desc; ?></p>
                         <div>
-                            <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                            <?php if($is_judges):?>
+                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
+                            <?php endif;?>
                             <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
                         </div>
                     </div>

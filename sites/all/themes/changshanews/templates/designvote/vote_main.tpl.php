@@ -1,9 +1,9 @@
 <?php ?>
 <script  type="text/javascript">
     jQuery(function(){
+        jQuery('#vote_ul').localScroll(800);
         hideTab();
         showTabByIdx('#tab1');
-        
         jQuery('.vote_design_main_li').each(function(){
             jQuery(this).find('a').click(function(){
                 var href = jQuery(this).attr('href');
@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3">
-                <ul style="float:right; width: 100%;">
+                <ul style="float:right; width: 100%;" id="vote_ul">
                     <li class="vote_design_main_li"><a href="#tab1">活动概括</a></li>
                     <li class="vote_design_main_li"><a href="#tab2">参赛方式</a></li>
                     <li class="vote_design_main_li"><a href="#tab3">大赛评委</a></li>
