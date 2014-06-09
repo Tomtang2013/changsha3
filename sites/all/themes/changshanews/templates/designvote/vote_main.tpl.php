@@ -1,7 +1,9 @@
 <?php ?>
 <script  type="text/javascript">
     jQuery(function(){
-//        jQuery('#vote_ul').localScroll(800);
+//        jQuery('#vote_ul').localScroll(0);
+
+    
 
         hideTab();
         showTabByIdx('#tab1');
@@ -12,7 +14,7 @@
                  showTabByIdx(href);
                  jQuery('html, body').animate({
                     scrollTop: 650
-                 }, 1000);
+                }, 0.1);
             });
         });
     });
