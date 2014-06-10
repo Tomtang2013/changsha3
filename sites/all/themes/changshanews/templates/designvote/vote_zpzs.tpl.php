@@ -55,7 +55,7 @@ foreach ($result as $row) {
     
 </script>
 
-<div class="design-vote-main ">
+<div class="design-vote-main vote">
  <?php if(count($image_works) == 0):?>
 		尽请期待
  <?php else:?>

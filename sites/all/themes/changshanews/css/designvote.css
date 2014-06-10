@@ -30,6 +30,7 @@
 }
 .vote{
    /*padding-top:20px;*/
+   min-height:400px;
 }
 
 .vote h4{
