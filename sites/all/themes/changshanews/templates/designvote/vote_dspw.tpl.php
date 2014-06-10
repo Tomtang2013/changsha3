@@ -24,25 +24,31 @@ function preparePW($name,$desc,$imagePath=""){
 
 <div  class="vote">
     <div class="vote_item">注：按姓氏首字母排序</div>
-    <div id="item-wrapper">
-        <div class="team_member_imgs" style="border-top:0px;">
-                 <?php  foreach($pwList as $pw):
-                     if(empty($pw->img_image)){
-                            $path = $pw->img_image;
-                        } else {
-                            $url = $pw->img_image;
-                            $url = file_create_url($url);
-                            $url = parse_url($url);
-                            $path = $url['path'];
-                        }
-                 ?>
-                    <div class="team_member_img  col-md-4">
-                            <img src="<?php print $path; ?>" alt="" style="width:195px;height:283px;" />
-                            <div style="color:black;padding-top:5px;"><?php print $pw->name; ?></div>
-                            <div><?php print $pw->desc; ?></div>
-                    </div>
-                 <?php endforeach; ?>
-            <div style="clear:both"></div>
-            </div>
-        </div>
+	
+		<div class="row">
+			<div id="item-wrapper">
+				<div class="team_member_imgs" style="border-top:0px;">
+						 <?php  foreach($pwList as $pw):
+							 if(empty($pw->img_image)){
+									$path = $pw->img_image;
+								} else {
+									$url = $pw->img_image;
+									$url = file_create_url($url);
+									$url = parse_url($url);
+									$path = $url['path'];
+								}
+						 ?>
+							<div class="team_member_img col-md-4 " >
+								<div style="" >
+									<img src="<?php print $path; ?>" alt="" style="width:195px;height:283px;" />
+									<div style="color:black;padding-top:5px;"><?php print $pw->name; ?></div>
+									<div><?php print $pw->desc; ?></div>
+								</div>
+							</div>
+						 <?php endforeach; ?>
+					
+				</div>
+			</div>
+		</div>
+	
 </div>

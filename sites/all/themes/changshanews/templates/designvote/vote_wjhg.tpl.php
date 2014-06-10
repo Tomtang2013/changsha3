@@ -38,15 +38,10 @@ foreach ($result as $row) {
                  ?>
                     <div class="pin">
                         <img src="<?php print $path; ?>" alt="" />
-                        <p class="vote-p">作者：<?php print $image_work->img_owner; ?></p>
-                        <p class="vote-p">作品名：<?php print $image_work->img_name; ?></p>
-                        <p><?php print $image_work->img_desc; ?></p>
-                        <div>
-                            <?php if($is_judges):?>
-                                <input type="button" class="vote-button" value="<?php print $button_value; ?>"/>
-                            <?php endif;?>
-                            <input type="hidden" value="<?php print $image_work->nid; ?>" class="vote_id"/>
-                        </div>
+                        <p class="vote-p">浣滆�咃細<?php print $image_work->img_owner; ?></p>
+                        <p class="vote-p">浣滃搧鍚嶏細<?php print $image_work->img_name; ?></p>
+                        <p style="padding-bottom:20px;"><?php print $image_work->img_desc; ?></p>
+                        
                     </div>
                  <?php endforeach; ?>
                
