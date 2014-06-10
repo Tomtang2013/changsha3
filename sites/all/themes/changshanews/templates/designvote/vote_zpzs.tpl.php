@@ -16,29 +16,16 @@ $image_works = array();
 foreach ($result as $row) {
     $node = node_load($row->nid);
     $image_work = new stdClass();
-    $image_work->nid = $row->nid;
-    $image_work->img_name = $node->field_img_name['und'][0]['value'];
-    $image_work->img_image = $node->field_img_image['und'][0]['uri'];
-    $image_work->img_desc = $node->field_img_desc['und'][0]['value'];
-    $image_work->img_owner = $node->field_img_owner['und'][0]['value'];
-    $image_works[] = $image_work;
+	if($node->field_img_num['und'][0]['value'] > 1){
+		$image_work->nid = $row->nid;
+		$image_work->img_name = $node->field_img_name['und'][0]['value'];
+		$image_work->img_image = $node->field_img_image['und'][0]['uri'];
+		$image_work->img_desc = $node->field_img_desc['und'][0]['value'];
+		$image_work->img_owner = $node->field_img_owner['und'][0]['value'];
+		$image_works[] = $image_work;
+	}
+    
 }
-
-//$result = db_query("SELECT nid FROM node WHERE type = :type", array(':type' => 'VideoWorks'))->fetchAll();
-//
-//$video_works = array();
-//foreach ($result as $row) {
-//    $node = node_load($row->nid);
-//    $video_work = new stdClass();
-//    $video_work->nid = $row->nid;
-//    $video_work->video_name = $node->field_video_name['und'][0]['value'];
-//    $video_work->video_path = $node->field_video_path['und'][0]['value'];
-//    $video_work->video_desc = $node->field_video_desc['und'][0]['value'];
-//    $video_work->video_owner = $node->field_video_owner['und'][0]['value'];
-//    $video_work->video_date = $node->field_video_date['und'][0]['value'];
-//    $video_works[] = $video_work;
-//}
-
 
 ?>
 
@@ -69,6 +56,9 @@ foreach ($result as $row) {
 </script>
 
 <div class="design-vote-main ">
+ <?php if(count($image_works) == 0):?>
+		尽请期待
+ <?php else:?>
         <div id="item-wrapper">
             <div id="item-columns">
                  <?php  foreach($image_works as $image_work):
@@ -97,5 +87,6 @@ foreach ($result as $row) {
                
             </div>
         </div>
+ <?php endif;?>
         
 </div>
