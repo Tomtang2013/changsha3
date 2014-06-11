@@ -51,7 +51,7 @@ foreach ($result as $row) {
                             </div>
                         <?php endforeach; ?>
                             <div class="div_img col-md-4" style="float:left;">
-                                <a href="<?php print $base_path ?>/designvote" >
+                                <a href="designvote" >
                                     <img src="<?php print $theme_path; ?>/images/work/summary/designvote.png" alt="" data-src=""
                                          class="img-responsive"/>
                                 </a>
