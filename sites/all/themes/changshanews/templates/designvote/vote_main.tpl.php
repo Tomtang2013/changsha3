@@ -6,9 +6,26 @@
     jQuery(function(){
 		hideTab();
         showTabByIdx('#tab1');
+		var selectItem = "nav_a1";
         jQuery('.vote_design_main_li').each(function(){
+			jQuery(this).find('a').mouseover(function(){
+				var img_path = jQuery(this).find('img').attr('src');
+				img_path = img_path.replace(/2/, "1");
+				jQuery(this).find('img').attr('src',img_path);
+			});
+			
+			jQuery(this).find('a').mouseout(function(){
+				if(selectItem != jQuery(this).attr('id')){
+					var img_path = jQuery(this).find('img').attr('src');
+					img_path = img_path.replace(/1/, "2");
+					jQuery(this).find('img').attr('src',img_path);
+				}
+			});
+			
             jQuery(this).find('a').click(function(){
                 var href = jQuery(this).attr('href');
+				
+				selectItem = jQuery(this).attr('id');
                 hideTab();
                 showTabByIdx(href);
                 jQuery('html, body').animate({
@@ -42,12 +59,12 @@
         <div class="row">
             <div class="col-md-3 col-sm-3">
                 <ul style="float:right; width: 100%;" id="vote_ul">
-                    <li class="vote_design_main_li"><a href="#tab1"><img src="<?php print $theme_path;?>/images/designvote/a2.png" alt=""/></a></li>
-                    <li class="vote_design_main_li"><a href="#tab2"><img src="<?php print $theme_path;?>/images/designvote/b2.png" alt=""/></a></li>
-                    <li class="vote_design_main_li"><a href="#tab3"><img src="<?php print $theme_path;?>/images/designvote/c2.png" alt=""/></a></li>
-                    <li class="vote_design_main_li"><a href="#tab4"><img src="<?php print $theme_path;?>/images/designvote/d2.png" alt=""/></a></li>
-                    <li class="vote_design_main_li"><a href="#tab5"><img src="<?php print $theme_path;?>/images/designvote/e2.png" alt=""/></a></li>
-                    <li class="vote_design_main_li"><a href="#tab6"><img src="<?php print $theme_path;?>/images/designvote/f2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab1" id="nav_a1"><img src="<?php print $theme_path;?>/images/designvote/a1.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab2" id="nav_a2"><img src="<?php print $theme_path;?>/images/designvote/b2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab3" id="nav_a3"><img src="<?php print $theme_path;?>/images/designvote/c2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab4" id="nav_a4"><img src="<?php print $theme_path;?>/images/designvote/d2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab5" id="nav_a5"><img src="<?php print $theme_path;?>/images/designvote/e2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab6" id="nav_a6"><img src="<?php print $theme_path;?>/images/designvote/f2.png" alt=""/></a></li>
                 </ul>
                 <ul style="float:right; width: 100%;">
                     <li class="vote_design_main_li"><a href="#tab7"><img src="<?php print $theme_path;?>/images/designvote/g2.png" alt=""/></a></li>
