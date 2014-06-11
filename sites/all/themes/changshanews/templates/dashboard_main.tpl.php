@@ -36,9 +36,10 @@
 
 <div class="dashboard_main">
 	<div class="dashboard_img dashboard_img5" id="dashboard_img5">
-         <div class="story">
-           
-        </div>
+            <a href="/designvote">
+             <div class="story">
+            </div>
+            </a>
     </div>
     <div class="dashboard_img dashboard_img1" id="dashboard_img1">
          <div class="story">
