@@ -1,6 +1,7 @@
 <?php
 global $base_path;
-$theme_path = $base_path . drupal_get_path('theme', 'changshaworks');
+$theme_path = $base_path . drupal_get_path('theme', 'changshanews');
+
 $work_detail_path = $base_path . "work/detail/";
 
 $result = db_query("SELECT nid FROM node WHERE type = :type", array(':type' => 'work'))->fetchAll();
@@ -49,6 +50,12 @@ foreach ($result as $row) {
                                 </a>
                             </div>
                         <?php endforeach; ?>
+                            <div class="div_img col-md-4" style="float:left;">
+                                <a href="<?php print $base_path ?>/designvote" >
+                                    <img src="<?php print $theme_path; ?>/images/work/summary/designvote.png" alt="" data-src=""
+                                         class="img-responsive"/>
+                                </a>
+                            </div>
                     </div>
                     <div style="clear:both"></div>
                 </div>
