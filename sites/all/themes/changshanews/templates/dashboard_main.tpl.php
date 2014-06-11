@@ -36,10 +36,19 @@
 
 <div class="dashboard_main">
 	<div class="dashboard_img dashboard_img5" id="dashboard_img5">
-            <a href="/designvote">
+           
              <div class="story">
+                 <a href="/designvote" style="width:100%;height:220px;">
+                      <div class=" " style="background-position: 80% 220px;
+                             z-index: 200;
+	margin: 0 auto;
+	position: absolute;
+        width: 90%;
+        height: 515px;
+        background-size:130px ;">
+                      </div>
+                 </a>
             </div>
-            </a>
     </div>
     <div class="dashboard_img dashboard_img1" id="dashboard_img1">
          <div class="story">
