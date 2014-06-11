@@ -6,13 +6,14 @@ $pwList = array();
 
 //$pwList[] = preparePW('陈绍华','<p>著名设计师，国际平面设计师联盟AGI会员</p>',$img_path.'csh.jpg');
 $pwList[] = preparePW('黄建成','<p>上海世博会中国馆设计总监，中央美术学院城市学院副院长、教授</p>',$img_path.'hjc.jpg');
-$pwList[] = preparePW('何人可','<p>德国红点奖终审评委，湖南大学设计艺术学院院长、教授</p>',$img_path.'hrk.jpg');
-$pwList[] = preparePW('贾丽军','<p>国际艾菲奖•大中华区执行主席，戛纳、纽约、伦敦三大广告节评审</p>',$img_path.'jlj.jpg');
+$pwList[] = preparePW('何人可','<p>德国红点奖终审评委</p><p>湖南大学设计艺术学院院长、教授</p>',$img_path.'hrk.jpg');
+$pwList[] = preparePW('贾丽军','<p>国际艾菲奖•大中华区执行主席</p><p>戛纳、纽约、伦敦三大广告节评审</p>',$img_path.'jlj.jpg');
 $pwList[] = preparePW('李少波','<p>湖南师范大学美术学院副院长，教授</p>',$img_path.'lsb.jpg');
-$pwList[] = preparePW('龙  博','<p>中南出版传媒集团副总经理，潇湘晨报董事长</p>',$img_path.'lb.jpg');
-$pwList[] = preparePW('莫康孙','<p>麦肯光明广告（中国）董事长，戛纳、卡里奥、纽约广告节评审</p>',$img_path.'mks.jpg');
+$pwList[] = preparePW('龙  博','<p>中南出版传媒集团副总经理</p><p>潇湘晨报董事长</p>',$img_path.'lb.jpg');
+$pwList[] = preparePW('莫康孙','<p>麦肯光明广告（中国）董事长</p><p>戛纳、卡里奥、纽约广告节评审</p>',$img_path.'mks.jpg');
 $pwList[] = preparePW('彭旭峰','<p>长沙市轨道交通集团董事长</p>',$img_path.'pxf.jpg');
-$pwList[] = preparePW('尹云从','<p>中国国际广告节长城奖(创意奖)终审评委，黄河奖(公益奖)终审评委</p>',$img_path.'yyc.jpg');
+$pwList[] = preparePW('尹云从','<p>中国国际广告节长城奖评审</p><p>中国公益广告黄河奖评审',$img_path.'yyc.jpg');
+
 
 
 
