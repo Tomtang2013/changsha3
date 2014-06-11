@@ -5,10 +5,11 @@
 }
 .vote_design_main{
 /*    background: url(../images/designvote/background.jpg);*/
-      background: url(../images/designvote/scribble_light.png);
+/*     background: url(../images/designvote/scribble_light.png);*/
       padding-top: 30px;
       padding-bottom:30px;
       width:100%;
+      background-color:#eeeeee;
     
 }
 
