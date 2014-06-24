@@ -1,7 +1,5 @@
 <div  class="vote">
-    <div class="vote_item">创作主张</div>
-    <p>设计长沙·为美好设计</p>
-    <hr>
+   
     <div class="vote_item">创作关键词</div>
     <p>地铁、城市、生活、公益</p>
     <hr>
