@@ -5,7 +5,7 @@ $pwList = array();
 
 
 //$pwList[] = preparePW('陈绍华','<p>著名设计师，国际平面设计师联盟AGI会员</p>',$img_path.'csh.jpg');
-$pwList[] = preparePW('黄建成','<p>上海世博会中国馆设计总监</p><p>中央美术学院城市学院副院长、教授</p>',$img_path.'hjc.jpg');
+$pwList[] = preparePW('黄建成','<p>上海世博会中国馆设计总监</p><p>中央美术学院城市设计学院副院长、教授</p>',$img_path.'hjc.jpg');
 $pwList[] = preparePW('何人可','<p>德国红点奖终审评委</p><p>湖南大学设计艺术学院院长、教授</p>',$img_path.'hrk.jpg');
 $pwList[] = preparePW('贾丽军','<p>国际艾菲奖•大中华区执行主席</p><p>戛纳、纽约、伦敦三大广告节评审</p>',$img_path.'jlj.jpg');
 $pwList[] = preparePW('李少波','<p>湖南师范大学美术学院副院长，教授</p>',$img_path.'lsb.jpg');
