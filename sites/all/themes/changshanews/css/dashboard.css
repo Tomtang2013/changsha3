@@ -66,8 +66,8 @@ h1{
 }
 
 .dashboard-page{
-     background-color: #494949!Important;
-     max-width: 1351px;
+     background-color: #cccccc!Important;
+//     max-width: 1351px;
 }
 
 .block-dashboard .content{
@@ -77,6 +77,7 @@ h1{
 .page-main{
     width:100%;
     margin: auto;
+	max-width: 1351px;
 }
 
 .first_header{
