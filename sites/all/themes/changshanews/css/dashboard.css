@@ -66,8 +66,7 @@ h1{
 }
 
 .dashboard-page{
-     background-color: #cccccc!Important;
-//     max-width: 1351px;
+     background-color: black!Important;
 }
 
 .block-dashboard .content{
@@ -77,7 +76,7 @@ h1{
 .page-main{
     width:100%;
     margin: auto;
-	max-width: 1351px;
+    max-width: 1351px;
 }
 
 .first_header{
@@ -183,28 +182,26 @@ h1{
 }
 .dashboard_main .small_log1{
     background: url(../images/main_image/dashboard_logo1.png) 50% 0 no-repeat fixed;
-/*        background-size:90px ;*/
+        background-position: 80% 220px;
         z-index: 200;
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
         height: 515px;
-        background-size:130px ;
 }
 
 .dashboard_main .small_log2{
         background: url(../images/main_image/dashboard_logo2.png) 50% 0 no-repeat fixed;
-/*        background-size:90px ;*/
+        background-position: 80% 220px;
         z-index: 200;
 	margin: 0 auto;
 	position: absolute;
         width: 90%;
         height:515px;
-        background-size:110px ;
 }
 .dashboard_main .small_log3{
         background: url(../images/main_image/dashboard_logo3.png) 50% 0 no-repeat fixed;
-        background-size:180px ;
+        background-position: 20% 200px;
         z-index: 200;
 	margin: 0 auto;
 	position: absolute;
@@ -214,14 +211,54 @@ h1{
 
 .dashboard_main .small_log4{
     background: url(../images/main_image/dashboard_logo4.png) 50% 0 no-repeat fixed;
-/*    background-size:180px ;*/
+    background-position: 75% 200px;
     z-index: 200;
     margin: 0 auto;
     position: absolute;
     width: 90%;
     height:515px;
-    background-size:170px ;
 }
+
+@media screen and (min-width:1800px){
+    .dashboard_main .small_log1{
+             background-position: 70% 220px;
+    }
+
+    .dashboard_main .small_log2{
+             background-position: 62% 220px;
+    }
+
+    .dashboard_main .small_log3{
+              background-position: 40% 200px;
+    }
+
+    .dashboard_main .small_log4{
+             background-position: 60% 400px;
+    }
+}
+
+@media screen and (min-width:2200px){
+   .dashboard_main .small_log1{
+             background-position: 62% 220px;
+    }
+
+    .dashboard_main .small_log2{
+             background-position: 52% 220px;
+    }
+
+    .dashboard_main .small_log3{
+              background-position: 40% 200px;
+    }
+
+    .dashboard_main .small_log4{
+             background-position: 60% 400px;
+    }
+}
+
+
+
+
+
 .dashboard_main .small_log{
     z-index: 200;
 }
