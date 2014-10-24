@@ -23,7 +23,7 @@ scripts[] = js/jquery.scrollTo-1.4.2-min.js
 scripts[] = js/bxslider/jquery.bxslider.js
 scripts[] = dist/js/bootstrap.js
 scripts[] = dist/js/holder.min.js
-
+scripts[] = js/dashboard.js
 
 regions[header] = Header
 regions[help] = Help

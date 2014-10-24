@@ -109,6 +109,14 @@ function dashboard_menu() {
         'access arguments' => array('dashboard'),
         'weight' => -47,
     );
+     
+      $items['header/search/%'] = array(
+        'title' => t('检索'),
+        'page callback' => 'header_search_call_back',
+         'page arguments' => array(2),
+        'access arguments' => array('dashboard'),
+        'weight' => -47,
+    );
 
 
     return $items;
@@ -248,4 +256,9 @@ function get_nav_member($nid,$opt){
         }
     }
     return -1;
+}
+
+function header_search_call_back($key){
+    $pageContent = $key.'';
+    return $pageContent;
 }

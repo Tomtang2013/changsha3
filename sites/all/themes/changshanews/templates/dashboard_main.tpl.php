@@ -53,7 +53,7 @@
     <div class="dashboard_img dashboard_img1" id="dashboard_img1">
          <div class="story">
             <a href="<?php print $bg1_path;?>">
-                <div class=" small_log1" style="background-position: 80% 220px;">
+                <div class=" small_log1" style="">
                 </div>
             </a>
         </div>
@@ -61,7 +61,7 @@
     <div class="dashboard_img dashboard_img2" id="dashboard_img2">
         <div class="story">
                 <a href="<?php print $bg2_path;?>">
-                <div class=" small_log2" style="background-position: 80% 220px;">
+                <div class=" small_log2" style="">
 <!--                    <a href="#" style="min-width:90px;min-height:130px;margin-left: 80%;margin-top: 100px;"> aaa </a>-->
                 </div>
                 </a>
@@ -70,7 +70,7 @@
     <div class="dashboard_img dashboard_img3" id="dashboard_img3" style="z-index:300;">
         <div class="story">
             <a href="<?php print $bg3_path;?>">
-            <div class=" small_log3" style="background-position: 20% 200px;">
+            <div class=" small_log3" style="">
             </div>
             </a>
 <!--            <a href="#" class="small_log"><img class="  small_log3" src="<?php print drupal_get_path('theme', 'changshanews'); ?>/images/main_image/dashboard_logo3.png"  alt=""/></a>-->
@@ -79,7 +79,7 @@
     <div class="dashboard_img dashboard_img4" id="dashboard_img4">
         <div class="story">
             <a href="<?php print $bg4_path;?>">
-            <div class=" small_log4" style="background-position: 75% 200px;">
+            <div class=" small_log4" style="">
                 
             </div>
             </a>

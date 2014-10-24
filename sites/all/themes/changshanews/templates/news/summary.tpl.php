@@ -2,7 +2,7 @@
 global $base_path;
 $news_detail_path = $base_path . "news/detail/";
 $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
-$result = db_query("SELECT nid FROM node WHERE type = :type order by created desc", array(':type' => 'news'))->fetchAll();
+$result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit 20", array(':type' => 'news'))->fetchAll();
 
 $news_list = array();
 $paths = array();

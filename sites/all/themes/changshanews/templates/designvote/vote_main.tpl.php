@@ -9,23 +9,26 @@
 		var selectItem = "nav_a1";
         jQuery('.vote_design_main_li').each(function(){
 			jQuery(this).find('a').mouseover(function(){
+				 
 				var img_path = jQuery(this).find('img').attr('src');
 				img_path = img_path.replace(/2/, "1");
 				jQuery(this).find('img').attr('src',img_path);
+				
 			});
 			
 			jQuery(this).find('a').mouseout(function(){
+			
 				if(selectItem != jQuery(this).attr('id')){
 					var img_path = jQuery(this).find('img').attr('src');
 					img_path = img_path.replace(/1/, "2");
 					jQuery(this).find('img').attr('src',img_path);
+				
 				}
 			});
 			
             jQuery(this).find('a').click(function(){
+			
                 var href = jQuery(this).attr('href');
-				
-				selectItem = jQuery(this).attr('id');
                 hideTab();
                 showTabByIdx(href);
                 jQuery('html, body').animate({
@@ -40,6 +43,8 @@
 				var img_path = jQuery(this).find('img').attr('src');
 				img_path = img_path.replace(/2/, "1");
 				jQuery(this).find('img').attr('src',img_path);
+				
+				selectItem = jQuery(this).attr('id');
 				
             });
         });
@@ -67,7 +72,7 @@
                     <li class="vote_design_main_li"><a href="#tab6" id="nav_a6"><img src="<?php print $theme_path;?>/images/designvote/f2.png" alt=""/></a></li>
                 </ul>
                 <ul style="float:right; width: 100%;">
-                    <li class="vote_design_main_li"><a href="#tab7"><img src="<?php print $theme_path;?>/images/designvote/g2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab7" id="nav_a7"><img src="<?php print $theme_path;?>/images/designvote/g2.png" alt=""/></a></li>
                 </ul>
             </div>
             <div class="col-md-9 col-sm-9" id="design_vote_content">

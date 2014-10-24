@@ -4,7 +4,7 @@ $about_company_path = $base_path . "about/company";
 $work_summary = $base_path . "work/summary";
 $news_service = $base_path . "news_service/platform";
 $news = $base_path .'news/summary';
-
+$serch_url = $base_path .'header/search/';
 $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
 
 ?>
@@ -19,7 +19,20 @@ $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
             jQuery(this).css("background-color","black");
             jQuery(this).find('a').css("color","white");
         });
+        
+        jQuery('#search-btn').click(function(){
+            var url = '<?php print $serch_url;?>';
+            var key = jQuery('#search-box').val();
+            console.log();
+            window.location.href = url+key;
+        });
     });
+    
+    
+
+//$(function(){
+//    alert('aaaaaaaaaa');
+//});
 </script>
 
 <!--[if lt IE 9]>
@@ -29,13 +42,17 @@ $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
 <div class="first_header navbar-fixed-top" >
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 header_left" >
+                <div class=" col-sm-4 col-md-4 header_left" >
                     <ul style="margin-top:20px;">
                         <li> <a href="<?php print $base_path?>">设计长沙</a></li>
                         <li> &nbsp;|&nbsp;<a href="<?php print $base_path?>">潇湘晨报品牌创意中心</a></li>
                     </ul>
                 </div>
-                <div class=" col-md-6 col-md-6 header_right"  >
+                <div class="col-sm-3 col-md-3" style="padding-top: 15px;" >
+                        <input type="text" class="col-sm-3" id="search-box" style="min-width: 100px;" >
+                        <input id="search-btn" type="button" value="检索!">
+                 </div>
+                <div class="col-sm-5  col-md-5 header_right"  >
                      <ul class="nav_link" >
                         <li > <a  style="padding-left:12px;" href="<?php print $about_company_path?>">关于</a></li>
                         <li><a  style="padding-left:12px;" href="<?php print $news?>">动态</a> </li>
