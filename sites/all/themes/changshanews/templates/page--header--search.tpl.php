@@ -29,7 +29,7 @@ function get_title_by_node($node) {
     switch ($node->type) {
         case 'news': return $news .'  '. $node->title;
         case 'work': return $work .'  '. $node->title;
-        case 'member': return $menber .'  '. $noe->title;
+        case 'member': return $menber .'  '. $node->title;
     }
     return '';
 }
