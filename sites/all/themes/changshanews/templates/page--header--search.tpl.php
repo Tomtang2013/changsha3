@@ -61,7 +61,7 @@ function get_title_by_node($node) {
                                     <div  class="news_summary_title_txt"  style="padding: 10px 15px 10px 15px;">
                                         <ul style="list-style-type:none;padding-left: 0px;margin-top: 0px;">
                                            <?php foreach ($node_list as $node): ?>
-                                                <li style="padding:10px 10px 0px 10px;height:20px;">
+                                                <li style="padding:10px 10px 0px 10px;height:30px;">
                                                     <a class="result_link" href="<?php print get_url_by_node($node); ?>" style="font-size: 16px;">
                                                         <?php print get_title_by_node($node); ?></a>
                                                   </li>
