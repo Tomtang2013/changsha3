@@ -39,20 +39,20 @@ $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
     <link href="<?php print $theme_path;?>/css/ie8/work.css" rel="stylesheet" type="text/css"/>
 <![endif]-->
 
-<div class="first_header navbar-fixed-top" >
+<div class="first_header navbar-fixed-top" style="min-width: 780px;">
         <div class="container">
             <div class="row">
-                <div class=" col-sm-4 col-md-4 header_left" >
+                <div class=" col-sm-4 col-md-4 header_left"  style="max-width: 390px;" >
                     <ul style="margin-top:20px;">
                         <li> <a href="<?php print $base_path?>">设计长沙</a></li>
                         <li> &nbsp;|&nbsp;<a href="<?php print $base_path?>">潇湘晨报品牌创意中心</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3 col-md-3" style="padding-top: 15px;" >
-                        <input type="text" class="col-sm-3" id="search-box" style="min-width: 100px;" >
+                <div class="col-sm-2 col-md-2" style="max-width: 200px;padding-top: 15px;padding-left: 0px;padding-right:0px;" >
+                        <input type="text" id="search-box" style="width:60%" >
                         <input id="search-btn" type="button" value="检索!">
                  </div>
-                <div class="col-sm-5  col-md-5 header_right"  >
+                <div class="col-sm-4  col-sm-offset-2 col-md-4 col-md-offset-2 header_right"  class="max-width: 300px;" >
                      <ul class="nav_link" >
                         <li > <a  style="padding-left:12px;" href="<?php print $about_company_path?>">关于</a></li>
                         <li><a  style="padding-left:12px;" href="<?php print $news?>">动态</a> </li>
@@ -60,7 +60,7 @@ $theme_path = $base_path.  drupal_get_path('theme', 'changshanews');
                         <li style="border-right:1px solid #333;"><a  style="padding-left:12px;"  href="<?php print $news_service?>">服务</a> </li>
                     </ul>
                 </div>
-                <div class="clearfix"></div>
+                
             </div>
         </div>
 </div>
