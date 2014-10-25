@@ -1,7 +1,7 @@
 <?php
 global $base_path;
 $key_value = $page['content']['system_main']['main']['#markup'];
-$key = $key_value . '%';
+$key = '%'.$key_value . '%';
 $query = db_query("SELECT nid FROM node WHERE title like :key order by created desc limit 20", array(':key' => $key));
 $result = $query->fetchAll();
 $node_list = array();
