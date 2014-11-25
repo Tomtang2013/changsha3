@@ -73,6 +73,7 @@
                 </ul>
                 <ul style="float:right; width: 100%;">
                     <li class="vote_design_main_li"><a href="#tab7" id="nav_a7"><img src="<?php print $theme_path;?>/images/designvote/g2.png" alt=""/></a></li>
+                    <li class="vote_design_main_li"><a href="#tab8" id="nav_a8"><img src="<?php print $theme_path;?>/images/designvote/h2.png" alt=""/></a></li>
                 </ul>
             </div>
             <div class="col-md-9 col-sm-9" id="design_vote_content">
@@ -82,7 +83,8 @@
                     <div id="tab4" class="vote-tab"><?php require_once 'vote_jpsz.tpl.php'; ?></div>
                     <div id="tab5" class="vote-tab"><?php require_once 'vote_zpzs.tpl.php'; ?></div>
                     <div id="tab6" class="vote-tab"><?php require_once 'vote_wjhg.tpl.php'; ?></div>
-					<div id="tab7" class="vote-tab"><?php require_once 'vote_xzzq.tpl.php'; ?></div>
+                    <div id="tab7" class="vote-tab"><?php require_once 'vote_xzzq.tpl.php'; ?></div>
+                    <div id="tab8" class="vote-tab"><?php require_once 'vote_rwmd.tpl.php'; ?></div>
             </div>
         </div>
 
