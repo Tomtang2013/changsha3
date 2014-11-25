@@ -29,7 +29,7 @@
 </script>
 
 <div class="design-vote-main vote">
-
+<h2>入围名单</h2>
 <p style="font-size:18px;color:blue;">(公益广告类)</p>
 <p>程清青—— 抵制雾霾</p>
 <p>吴伟发 罗政 屠义涛—— 透明人</p><p>夏奇——“美丽”的水果
