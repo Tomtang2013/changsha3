@@ -29,7 +29,7 @@
 </script>
 
 <div class="design-vote-main vote">
-<h2 styl='Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important'>组委会推荐奖-优秀组织奖:</h2>    
+<p style='font-size:30px;color:blue;'>组委会推荐奖-优秀组织奖:</p>    
 
 <p>湖南师范大学美术学院          湖南商学院设计艺术学院</p>
 <p>湖南工业职业技术学院          星期天美术培训学校</p>
