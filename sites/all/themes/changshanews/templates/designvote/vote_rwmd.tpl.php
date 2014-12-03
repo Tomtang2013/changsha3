@@ -29,6 +29,32 @@
 </script>
 
 <div class="design-vote-main vote">
+<h2 styl='Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important'>组委会推荐奖-优秀组织奖:</h2>    
+
+<p>湖南师范大学美术学院          湖南商学院设计艺术学院</p>
+<p>湖南工业职业技术学院          星期天美术培训学校</p>
+<p>理想美术培训中心</p>
+
+<p style="font-size:18px;color:blue;">金麓奖（团体类）:</p>
+<p>湖南古湘广告传播有限公司          长沙达观文化传播有限公司</p>
+<p>长沙耕传广告有限公司              长沙风和日丽广告有限公司</p>
+<p>长沙天橙广告策划有限公司          长沙远行品牌设计</p>
+
+<p style="font-size:18px;color:blue;">金麓奖（个人类）</p>
+<p>作者：王頔 </p>
+<p>作品名：可以给我一个拥抱吗</p>
+
+<p style="font-size:18px;color:blue;">银麓奖:</p>
+<p>作者：宋    庆     作品名：SOS -Global warming</p>
+<p>作者：刘    骏     作品名：喘不过气</p>
+<p>作者：王崛起     作品名：别成为马路杀手</p>
+
+<p style="font-size:18px;color:blue;">铜麓奖:</p>
+<p>作者：李河谕     作品名：和平之花</p>
+<p>作者：苏鹏程     作品名：珍惜相聚</p>
+<p>作者：夏奇、张中阳、李昌勃     作品名：瓶中窥路</p>
+
+    
 <h2 styl='Microsoft YaHei,"\5B8B\4F53",Arial,HELVETICA!Important'>入围名单</h2>
 <p style="font-size:18px;color:blue;">(公益广告类)</p>
 <p>程清青—— 抵制雾霾</p>
