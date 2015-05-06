@@ -105,7 +105,7 @@ uasort($news_list, "compareItemsDate");
                                 <?php endif; ?>
                                 <?php if($count == $page_size): ?>
                                     <button onclick="pagerNext()"  class="btn btn-default">下一页</button>
-ii                                <?php endif; ?>
+                                <?php endif; ?>
                             </div>
                             </div>
                     </div>
