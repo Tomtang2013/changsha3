@@ -1,5 +1,5 @@
 <?php
-$page_size = 14;
+$page_size = 1;
 $current_page = 0;
 
 if(isset($_REQUEST['current_page'])){
@@ -70,8 +70,15 @@ uasort($news_list, "compareItemsDate");
             jQuery('.bx-pager-item').hide();
             jQuery('.bx-controls-direction').hide();
         },500);
-        
     });
+    
+    function pagerNext(){
+        window.location.href = '<?php print $next_page_url;?>';
+    }
+    function pagerPre(){
+        window.location.href = '<?php print $pre_page_url;?>';
+    }
+    
 </script>
 
 <div>
@@ -94,10 +101,10 @@ uasort($news_list, "compareItemsDate");
                             </ul>
                             <div style ="padding:10px;">
                                 <?php if($current_page >0): ?>
-                                <a href="<?php print$pre_page_url;?>" style="padding-right:50px;color:#333333;">上一页</a>
+                                    <button onclick="pagerPre()" class="btn btn-default">上一页</button>
                                 <?php endif; ?>
                                 <?php if($count == $page_size): ?>
-                                <a style="color:#333333;" href="<?php print  $next_page_url;?>">下一页</a>
+                                    <button onclick="pagerNext()"  class="btn btn-default">下一页</button>
                                 <?php endif; ?>
                             </div>
                             </div>
