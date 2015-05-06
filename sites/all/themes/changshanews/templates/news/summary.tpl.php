@@ -1,5 +1,5 @@
 <?php
-$page_size = 1;
+$page_size = 14;
 $current_page = 0;
 
 if(isset($_REQUEST['current_page'])){
@@ -105,7 +105,7 @@ uasort($news_list, "compareItemsDate");
                                 <?php endif; ?>
                                 <?php if($count == $page_size): ?>
                                     <button onclick="pagerNext()"  class="btn btn-default">下一页</button>
-                                <?php endif; ?>
+ii                                <?php endif; ?>
                             </div>
                             </div>
                     </div>
