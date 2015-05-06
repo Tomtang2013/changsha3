@@ -1,8 +1,21 @@
 <?php
+$page_size = 14;
+$current_page = 0;
+
+if(isset($_REQUEST['current_page'])){
+    $current_page = $_REQUEST['current_page'];
+} 
+$current_item = $current_page * $page_size;
+$next_page = $current_page+1;
+$pre_page = $current_page -1;
+
 global $base_path;
 $news_detail_path = $base_path . "news/detail/";
+$next_page_url = $base_path . "news/summary/?current_page=".$next_page;
+$pre_page_url = $base_path . "news/summary/?current_page=".$pre_page;
+
 $theme_path = $base_path . drupal_get_path('theme', 'changshanews');
-$result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit 16", array(':type' => 'news'))->fetchAll();
+$result = db_query("SELECT nid FROM node WHERE type = :type order by created desc limit $current_item , $page_size", array(':type' => 'news'))->fetchAll();
 
 $news_list = array();
 $paths = array();
@@ -16,7 +29,9 @@ foreach ($result as $row) {
     $url = parse_url($url);
     $paths[] = $url['path'];
     $news_list[] = $news;
+    
 }
+$count = count($news_list);
 
 function compareItemsDate($a, $b){
     if ( strtotime($a->public_date) < strtotime($b->public_date) ) return 1;
@@ -76,7 +91,15 @@ uasort($news_list, "compareItemsDate");
                                         <?php print $news->title; ?></a>
                                     <span style="float:right;">[ <?php print $news->public_date; ?> ]</span></li>
                                 <?php endforeach; ?>
-                                    </ul>
+                            </ul>
+                            <div style ="padding:10px;">
+                                <?php if($current_page >0): ?>
+                                <a href="<?php print$pre_page_url;?>" style="padding-right:50px;color:#333333;">上一页</a>
+                                <?php endif; ?>
+                                <?php if($count == $page_size): ?>
+                                <a style="color:#333333;" href="<?php print  $next_page_url;?>">下一页</a>
+                                <?php endif; ?>
+                            </div>
                             </div>
                     </div>
                     <div  class="col-md-4 news_imgs" >
